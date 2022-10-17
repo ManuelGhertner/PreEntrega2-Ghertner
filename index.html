@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elishar Mudanzas</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
@@ -35,64 +36,90 @@
                     <a class="item-link" href="./contacto.html">CONTACTO</a>
                 </li>   
                 <li class="menu-item">
-                    <a class="item-link"  id="link-cotizar" href="./presupuesto.html">COTIZAR</a>
+                    <a class="btn btn-warning btn-lg" href="./presupuesto.html" role="button">COTIZAR</a>
                 </li>    
              </ul>
         </nav>
 </header>
 <main>
     <section id="banner">
-        <img class="banner-imagen" src="./images/banner grande grande.jpg" alt="">
-        <p class="banner-texto-1">MUDANZAS INTERNACIONALES</p>
-        <p class="banner-texto-2">PARTICULARES Y DIPLOMATICAS</p>
-        <p class="banner-texto-3">EN TODO EL MUNDO.</p>
-        <a class="banner-boton" href="./presupuesto.html">PEDIR PRESUPUESTO</a>
+        <div class="contenido-banner container ">
+            <article class="texto-banner">  
+                    <article class="banner-texto-1">
+                        <p>MUDANZAS INTERNACIONALES</p>
+                    </article>
+                    <article class="banner-texto-2">
+                    <p>PARTICULARES Y DIPLOMATICAS</p>
+                    </article>
+                    <article class="banner-texto-3">
+                        <p>EN TODO EL MUNDO.</p>
+                    </article>
+            </article>
+            <article class="banner-boton">
+                <a class="btn btn-warning btn-lg" href="./presupuesto.html" role="button">PEDIR PRESUPUESTO</a>
+            </article>
+        </div>  
     </section>
-    <section id="servicios" class="container">
-        <p class="servicio-desde">MUDANZAS DESDE ARGENTINA</p>
-        <p class="servicio-hacia">MUDANZAS HACIA ARGENTINA</p>
-        <figure class="icono-avion-1">
-            <img src="./images/icono avion.png" alt="Avion">
-        </figure>
-        <figure class="icono-barco-1">
-            <img src="./images/icono barco.png" alt="Barco">
-        </figure>
-        <figure class="icono-camion-1">
-            <img src="./images/icono camion.png" alt="Camion">
-        </figure>
-        <figure class="icono-avion-2">
-            <img src="./images/icono avion.png" alt="Avion">
-        </figure>
-        <figure class="icono-barco-2">
-            <img src="./images/icono barco.png" alt="Barco">
-        </figure>
-        <figure class="icono-camion-2">
-            <img src="./images/icono camion.png" alt="Camion">
-        </figure>
+    <section  class="container servicios row">
+    <article class="servicio-desde-ubicacion col-xxl-5 col-xl-5 col-lg-5 col-md-5 ">
+        <article class="servicio-desde">
+            <div class="parrafo-desde">
+                <p >MUDANZAS DESDE ARGENTINA</p>
+            </div>
+            <figure class="icono-avion-1 ">
+                <img src="./images/icono avion.png" alt="Avion">
+            </figure>
+            <figure class="icono-barco-1 ">
+                <img src="./images/icono barco.png" alt="Barco">
+            </figure>
+            <figure class="icono-camion-1 ">
+                <img src="./images/icono camion.png" alt="Camion">
+            </figure>
+        </article>
+    </article>
+        <article class="separador col-xxl-2 col-xl-2 col-lg-2 col-md-2"></article>
+        <article class="servicio-hacia-ubicacion col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+        <article class="servicio-hacia">
+            <div class="parrafo-hacia">
+                <p >MUDANZAS HACIA ARGENTINA</p>
+            </div>
+            <figure class="icono-avion-2 ">
+                <img src="./images/icono avion.png" alt="Avion">
+            </figure>
+            <figure class="icono-barco-2 ">
+                <img src="./images/icono barco.png" alt="Barco">
+            </figure>
+            <figure class="icono-camion-2 ">
+                <img src="./images/icono camion.png" alt="Camion">
+            </figure>
+        </article>
+    </article>
     </section>
         <section class="pedido-presupuesto">
             <h2>PEDIDO DE PRESUPUESTO</h2>
                 <p>Complete formulario en linea para cotizar su mudanza</p>
-                <a id="link-presupuesto" href="./presupuesto.html">PRESUPUESTAR</a>
+                <a id="link-presupuesto" class="btn btn-warning btn-lg" href="./presupuesto.html" role="button">PRESUPUESTAR</a>
         </section>
         <section class="alianzas-certificaciones container">
             <h2 class="alianzas-index-titulo">ALIANZAS Y CERTIFICACIONES</h2>
-            <figure class="alianzas-index-imagen-iam">
-                <img  src="./images/IAM.jpg" alt="IAM">
-            </figure>
-            <figure class="alianzas-index-imagen-ara">
-                <img  src="./images/ARA.jpg" alt="ARA">
-            </figure>
-            <figure class="alianzas-index-imagen-ima">
-                <img  src="./images/IMA.jpg" alt="IMA">
-            </figure>
-            <figure class="alianzas-index-imagen-moverspoe">
-                <img  src="./images/MoversPOE.jpg" alt="MOVERSPOE">
-            </figure>
+            <article class="alianzas-certificaciones-orden container row">
+                <figure class="alianzas-index-imagen-iam col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <img  src="./images/IAM.jpg" alt="IAM">
+                </figure>
+                <figure class="alianzas-index-imagen-ara col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <img  src="./images/ARA.jpg" alt="ARA">
+                </figure>
+                <figure class="alianzas-index-imagen-ima col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <img  src="./images/IMA.jpg" alt="IMA">
+                </figure>
+                <figure class="alianzas-index-imagen-moverspoe col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <img  src="./images/MoversPOE.jpg" alt="MOVERSPOE">
+                </figure>
+        </article>
         </section>
     </main>
     <footer>
-        <section class="item-footer container ">
+        <section class="item-footer container">
                 <h2 class="footer-email-titulo">E-mail</h2>
                     <p class="footer-email">info@elishar.com.ar</p>
                 <h2 class="footer-wpp-titulo">Whatsapp</h2>
@@ -110,5 +137,6 @@
                 </figure>
             </section>
     </footer>
+    <script src="./js/bootstrap.bundle.js"></script>
 </body>
 </html>

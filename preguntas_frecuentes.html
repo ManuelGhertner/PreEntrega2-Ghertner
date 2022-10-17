@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas frecuentes</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
@@ -35,7 +36,7 @@
                     <a class="item-link" href="./contacto.html">CONTACTO</a>
                 </li>   
                 <li class="menu-item">
-                    <a class="item-link"  id="link-cotizar" href="./presupuesto.html">COTIZAR</a>
+                    <a class="btn btn-warning btn-lg" href="./presupuesto.html" role="button">COTIZAR</a>
                 </li>    
              </ul>
         </nav>
@@ -48,18 +49,21 @@
             <article>
                 <h2> Desde Argentina</h2>
             </article>
-                <article>
-                    <h3><a name="volumen"></a>¿Cómo calculo el volumen de mi mudanza? </h3>
+            <h3><a name="volumen"></a>¿Cómo calculo el volumen de mi mudanza? </h3>
+                <article class="volumen-mudanza-1">
+                    <article class="volumen-mudanza-1-texto">
                         <p>El volumen de los enseres que se enviaran se calcula multiplicando el ancho x largo x alto de cada objeto en particular y luego sumarlos todos. De todas maneras con el fin de realizar una estimación personal y rápida, tomar como referencia que tanto una heladera convencional como 10 cajas medianas ( 0.40 x 0.60 x 0.40 ) ocupan aproximadamente 1 m3. 
                         </p>
                         <p>Además, cuando soliciten el presupuesto ONLINE, podrán hacer uso de una tabla automatizada para hacer una estimación del volumen.
                             Tener en cuenta que a los efectos de la cotización se considera el volúmen bruto, compuesto por los efectos (volúmen neto) más el embalaje.</p>
-                        <figure>
+                    </article>       
+                        <figure class="volumen-mudanza-1-imagen">
                             <img src="./images/caja 1.jpg" alt="Caja">
                         </figure>
                 </article>
-                <article class="lista">
-                    <h3>¿Cómo calculan el costo de mi mudanza?</h3>
+                <h3>¿Cómo calculan el costo de mi mudanza?</h3>
+                <article class="costo-mudanza-1 lista">
+                    <article class="costo-mudanza-1-texto">
                         <p>El costo de la mudanza se calcula según el volumen para envíos marítimos y según peso y volúmen combinados para envíos aéreos. <a class="link-interno" href="#volumen">¿Cómo calculo el volumen de mi mudanza?</a>. En base a esto, se tiene en cuenta el coste de los siguientes servicios:</p>
                             <ul>
                                 <li>Embalaje de los enseres y muebles en el domicilio de origen. </li>
@@ -83,7 +87,8 @@
                         <p>En una mudanza internacional, se pueden estimar de manera aproximada los gastos del puerto de destino. Estos serán provistos por nuestros corresponsales en el extranjero.</p> 
                         <p>En el caso de una mudanza realizada de manera aérea, 1 m3 equivale a 167 kg, y se factura según esta regla. A modo de ejemplo, si tiene medio metro cúbico y el peso iguala o supera los 167kg, entonces el monto facturable es por el peso; si tiene un metro cúbico pero el peso no llega a 167kg el monto facturable es de 167 kg.</p> 
                         <p>Igualmente, la manera más fácil de calcular el valor de la mudanza y saber que incluye y que no, es pidiendonos un <a class="link-interno" href="./presupuesto.html">presupuesto ONLINE.</a></p>    
-                        <figure>
+                    </article>
+                        <figure class="costo-mudanza-1-imagen">
                             <img src="./images/costo mudanza 1.jpg" alt="Como calculo el costo de mi mudanza">
                         </figure>
                 </article>
@@ -193,7 +198,7 @@
         <section class="pedido-presupuesto">
             <h2>PEDIDO DE PRESUPUESTO</h2>
                 <p>Complete formulario en linea para cotizar su mudanza</p>
-                <a id="link-presupuesto" href="./presupuesto.html">PRESUPUESTAR</a>
+                <a id="link-presupuesto" class="btn btn-warning btn-lg" href="./presupuesto.html" role="button">PRESUPUESTAR</a>
         </section>
         <section class="preguntas container">
             <article>
@@ -380,6 +385,7 @@
                 </figure>
             </section>
     </footer>
+    <script src="./js/bootstrap.bundle.js"></script>
 </body>
 </html>
 
