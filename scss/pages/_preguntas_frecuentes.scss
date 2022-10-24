@@ -1,0 +1,50 @@
+.link-interno{
+    font-style: italic;
+    text-decoration: none;
+}
+
+.preguntas h3{
+    font-size: $text-l;
+}
+.preguntas h2{
+    font-size: $text-xl;
+}
+.preguntas h1{
+    font-size: $text-xxl;
+}
+
+.preguntas p{
+    font-size: $text-s;
+}
+
+.lista ul li{
+    list-style: circle;
+    font-size: $text-s;
+}
+
+
+.volumen-mudanza-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.costo-mudanza-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.impuestos-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.requisitos-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seguro-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

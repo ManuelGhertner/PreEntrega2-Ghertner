@@ -1,0 +1,56 @@
+/* normalize */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Asap', sans-serif;
+    color: $primary;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;  
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    display: inline-block;
+}
+
+.navbar-menu-item-link{
+   font-size: var(--text-s);
+   text-decoration: none; 
+}
+
+ol , ul, dl{
+    margin-bottom: 0;
+}
+
+.navbar{
+    padding: 0;
+}
+.navbar-menu{
+    padding: 0;
+}
+.servicios{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+    --bs-gutter-x: 0rem;
+}
+.btn-warning{
+    --bs-btn-hover-color: none;
+}
