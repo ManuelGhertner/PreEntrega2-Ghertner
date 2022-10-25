@@ -664,10 +664,10 @@ header {
 .preguntas h3 {
   font-size: 3.2em; }
 
-.preguntas h2 {
+.preguntas-frecuentes-titulo-desde {
   font-size: 3.6em; }
 
-.preguntas h1 {
+.preguntas-frecuentes-titulo {
   font-size: 4.8em; }
 
 .preguntas p {
@@ -677,30 +677,273 @@ header {
   list-style: circle;
   font-size: 1.6em; }
 
+.preguntas-frecuentes-titulo {
+  margin: 0;
+  padding: 1.6rem;
+  display: flex;
+  justify-content: center; }
+
+.preguntas-frecuentes-titulo-desde {
+  margin: 0;
+  padding: 0.8rem 1.6rem 0.8rem 3.2rem;
+  display: flex; }
+
 .volumen-mudanza-1 {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 3.2rem; }
+  .volumen-mudanza-1-imagen {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.6rem; }
+  .volumen-mudanza-1-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1.6rem; }
+
+@media screen and (max-width: 768px) {
+  .volumen-mudanza-1 h3 {
+    font-size: 2em; }
+  .preguntas-frecuentes-titulo {
+    font-size: 3.2em;
+    font-weight: bold; }
+  .preguntas-frecuentes-titulo-desde {
+    font-size: 2em;
+    font-weight: bold; } }
+
+@media screen and (max-width: 576px) {
+  .volumen-mudanza-1-imagen img {
+    max-width: 85%;
+    max-height: 85%; }
+  .costo-mudanza-1-imagen img {
+    max-width: 85%;
+    max-height: 85%; }
+  .requisitos-1-imagen img {
+    max-width: 85%;
+    max-height: 85%; }
+  .seguro-1-imagen img {
+    max-width: 85%;
+    max-height: 85%; }
+  .transporte-1-imagen img {
+    max-width: 85%;
+    max-height: 85%; }
+  .contenedores-1-imagenes-imagen-1 img {
+    max-width: 90%;
+    max-height: 90%; }
+  .contenedores-1-imagenes-imagen-2 img {
+    max-width: 90%;
+    max-height: 90%; }
+  .requisitos-vehiculos-1-imagen img {
+    max-width: 85%;
+    max-height: 85%; } }
 
 .costo-mudanza-1 {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 0 auto;
+  padding: 3.2rem; }
+  .costo-mudanza-1-imagen {
+    justify-content: center;
+    display: flex; }
+  .costo-mudanza-1-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+  .costo-mudanza-1-titulo {
+    display: flex;
+    justify-content: flex-end; }
 
 .impuestos-1 {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .impuestos-1-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem; }
+  .impuestos-1-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
 
 .requisitos-1 {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .requisitos-1-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem; }
+  .requisitos-1-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+  .requisitos-1-titulo {
+    display: flex; }
 
 .seguro-1 {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .seguro-1-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem; }
+  .seguro-1-titulo {
+    display: flex;
+    justify-content: flex-end; }
+  .seguro-1-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1.6rem; }
+
+.tiempo-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .tiempo-1-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem; }
+  .tiempo-1-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+  .tiempo-1-titulo {
+    display: flex; }
+
+.transporte-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 3.2rem; }
+  .transporte-1-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem; }
+  .transporte-1-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+  .transporte-1-titulo {
+    display: flex;
+    justify-content: flex-end; }
+
+.contenedores-1 {
+  display: flex;
+  justify-content: center;
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .contenedores-1-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1.6rem; }
+  .contenedores-1-titulo {
+    display: flex; }
+  .contenedores-1-imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+    .contenedores-1-imagenes-imagen-1 {
+      display: flex;
+      justify-content: center; }
+    .contenedores-1-imagenes-imagen-2 {
+      display: flex;
+      justify-content: center; }
+
+.requisitos-vehiculos-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .requisitos-vehiculos-1-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem;
+    padding-right: 1.6rem; }
+  .requisitos-vehiculos-1-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+  .requisitos-vehiculos-1-titulo {
+    display: flex; }
+
+.vehiculos-interior-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 3.2rem; }
+  .vehiculos-interior-1-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem; }
+  .vehiculos-interior-1-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+  .vehiculos-interior-1-titulo {
+    display: flex;
+    justify-content: flex-end; }
+
+.condicion-vehiculos-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .condicion-vehiculos-1-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem;
+    padding-right: 1.6rem; }
+  .condicion-vehiculos-1-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+  .condicion-vehiculos-1-titulo {
+    display: flex;
+    justify-content: flex-end; }
+
+.impuestos-vehiculos-1 {
+  display: flex;
+  justify-content: center;
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .impuestos-vehiculos-1-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem; }
+  .impuestos-vehiculos-1-titulo {
+    display: flex; }
+  .impuestos-vehiculos-1-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1.6rem; }
 
 .presupuesto-embajadas {
   background-color: #00487C;

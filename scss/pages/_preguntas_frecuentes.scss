@@ -6,10 +6,10 @@
 .preguntas h3{
     font-size: $text-l;
 }
-.preguntas h2{
+.preguntas-frecuentes-titulo-desde{
     font-size: $text-xl;
 }
-.preguntas h1{
+.preguntas-frecuentes-titulo{
     font-size: $text-xxl;
 }
 
@@ -22,29 +22,360 @@
     font-size: $text-s;
 }
 
-
-.volumen-mudanza-1{
+.preguntas-frecuentes-titulo{
+    margin: 0;
+    padding: $sp-s;
     display: flex;
     justify-content: center;
-    align-items: center;
+
 }
+.preguntas-frecuentes-titulo-desde{
+    margin: 0;
+    padding: $sp-xs $sp-s $sp-xs $sp-m;
+    display: flex;
+}
+.volumen-mudanza-1{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: $sp-m;
+    &-imagen{
+        display: flex;
+        justify-content: center;
+        padding-top: $sp-s;
+    }
+    &-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: $sp-s;
+    }
+   
+}
+@media screen and (max-width:768px) {
+    .volumen-mudanza-1{
+        h3{
+            font-size: $text-m;
+        }
+    }
+    .preguntas-frecuentes-titulo {
+        font-size: $text-l;
+        font-weight: bold;
+    }
+    .preguntas-frecuentes-titulo-desde{
+        font-size: $text-m;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width:576px) {
+    .volumen-mudanza-1{
+        &-imagen{
+            img{
+                max-width: 85%;
+                max-height: 85%;
+            }
+        }
+    }
+    .costo-mudanza-1{
+        &-imagen{
+            img{
+                max-width: 85%;
+                max-height: 85%;
+            }
+        }
+    } 
+    .requisitos-1{
+        &-imagen{
+            img{
+                max-width: 85%;
+                max-height: 85%;
+            }
+        }
+    } 
+    .seguro-1{
+        &-imagen{
+            img{
+                max-width: 85%;
+                max-height: 85%;
+            }
+        }
+    }   
+    .transporte-1{
+        &-imagen{
+            img{
+                max-width: 85%;
+                max-height: 85%;
+            }
+        }
+    }
+    .contenedores-1-imagenes-imagen{
+        &-1{
+            img{
+                max-width: 90%;
+                max-height: 90%;
+            }
+        }
+        &-2{
+            img{
+                max-width: 90%;
+                max-height: 90%;
+            }
+        }
+    }
+    .requisitos-vehiculos-1{
+        &-imagen{
+            img{
+                max-width: 85%;
+                max-height: 85%;
+            }
+        }
+    }
+}
+
 .costo-mudanza-1{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    padding: $sp-m;
+    &-imagen{
+        justify-content: center;
+        display: flex;
+        
+    }
+    &-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: $sp-s;
+    }
+    &-titulo{
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 .impuestos-1{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: $sp-m;
+    margin: 0 auto;
+    &-imagen{
+        justify-content: center;
+        display: flex;
+        padding-top: $sp-s;
+    }
+    &-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: $sp-s;
+    }
+
 }
 .requisitos-1{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: $sp-m;
+    margin: 0 auto;
+    &-imagen{
+        justify-content: center;
+        display: flex;
+        padding-top: $sp-s;
+    }
+    &-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: $sp-s;
+    }
+    &-titulo{
+        display: flex;
+    }
 }
 .seguro-1{
     display: flex;
     justify-content: center;
+    padding: $sp-m;
+    margin: 0 auto;
+    &-imagen{
+        justify-content: center;
+        display: flex;
+        padding-top: $sp-s;
+    }
+
+    &-titulo{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: $sp-s;
+    }
+}
+.tiempo-1{
+    display: flex;
+    justify-content: center;
     align-items: center;
+    padding: $sp-m;
+    margin: 0 auto;
+    &-imagen{
+        justify-content: center;
+        display: flex;
+        padding-top: $sp-s;
+    }
+    &-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: $sp-s;
+    }
+    &-titulo{
+        display: flex;
+    }
+}
+.transporte-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: $sp-m;
+    &-imagen{
+        justify-content: center;
+        display: flex;
+        padding-top: $sp-s;
+        
+    }
+    &-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: $sp-s;
+    }
+    &-titulo{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+.contenedores-1{
+    display: flex;
+    justify-content: center;
+    padding: $sp-m;
+    margin: 0 auto;
+    &-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: $sp-s;
+    }
+    &-titulo{
+        display: flex;
+    }
+    &-imagenes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: $sp-s;
+        &-imagen-1{
+            display: flex;
+            justify-content: center; 
+        }
+        &-imagen-2{
+            display: flex;
+            justify-content: center; 
+        }
+    }
+}
+.requisitos-vehiculos-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $sp-m;
+    margin: 0 auto;
+    &-imagen{
+        justify-content: center;
+        display: flex;
+        padding-top: $sp-s;
+        padding-right:$sp-s ;
+    }
+    &-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: $sp-s;
+    }
+    &-titulo{
+        display: flex;
+    }
+}
+.vehiculos-interior-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: $sp-m;
+    &-imagen{
+        justify-content: center;
+        display: flex;
+        padding-top: $sp-s;
+        
+    }
+    &-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: $sp-s;
+    }
+    &-titulo{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.condicion-vehiculos-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $sp-m;
+    margin: 0 auto;
+    &-imagen{
+        justify-content: center;
+        display: flex;
+        padding-top: $sp-s;
+        padding-right:$sp-s ;
+    }
+    &-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: $sp-s;
+    }
+    &-titulo{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+.impuestos-vehiculos-1{
+    display: flex;
+    justify-content: center;
+    padding: $sp-m;
+    margin: 0 auto;
+    &-imagen{
+        justify-content: center;
+        display: flex;
+        padding-top: $sp-s;
+    }
+
+    &-titulo{
+        display: flex;
+    }
+    &-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: $sp-s;
+    }
 }
