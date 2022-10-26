@@ -6,9 +6,6 @@
 .preguntas h3{
     font-size: $text-l;
 }
-.preguntas-frecuentes-titulo-desde{
-    font-size: $text-xl;
-}
 .preguntas-frecuentes-titulo{
     font-size: $text-xxl;
 }
@@ -27,30 +24,82 @@
     padding: $sp-s;
     display: flex;
     justify-content: center;
+    font-weight: bold;
 
 }
-.preguntas-frecuentes-titulo-desde{
-    margin: 0;
-    padding: $sp-xs $sp-s $sp-xs $sp-m;
-    display: flex;
+.preguntas-frecuentes-titulo{
+    &-desde{
+        margin: 0;
+        padding: $sp-xs $sp-s $sp-xs $sp-m;
+        display: flex;
+        font-weight: bold;
+        font-size: $text-xl;
+    }
+    &-hacia{
+        margin: 0;
+        padding: $sp-xs $sp-s $sp-xs $sp-m;
+        display: flex;
+        font-weight: bold;
+        font-size: $text-xl;
+    }
 }
-.volumen-mudanza-1{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: $sp-m;
-    &-imagen{
+
+
+.volumen-mudanza{
+    &-1{
         display: flex;
-        justify-content: center;
-        padding-top: $sp-s;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: $sp-m;
+        &-imagen{
+            display: flex;
+            justify-content: flex-start;
+        }
+        &-texto{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: $sp-s;
+        }
     }
-    &-texto{
+    &-2{
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding-top: $sp-s;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: $sp-m;
+        &-imagen{
+            display: flex;
+            justify-content: flex-start;
+        }
+        &-texto{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: $sp-s;
+        }
     }
-   
+}
+@media screen and (max-width:992px){
+    .volumen-mudanza{
+        &-1{
+            &-imagen{
+                justify-content: center;
+            }
+        }
+        &-2{
+            &-imagen{
+                justify-content: center;
+            }
+        }
+     }
+}
+@media screen and (max-width:992px){
+    .costo-mudanza-1{
+        &-lista-imagen{
+            flex-direction: column;
+        }
+
+  }
 }
 @media screen and (max-width:768px) {
     .volumen-mudanza-1{
@@ -67,6 +116,7 @@
         font-weight: bold;
     }
 }
+
 @media screen and (max-width:576px) {
     .volumen-mudanza-1{
         &-imagen{
@@ -76,14 +126,7 @@
             }
         }
     }
-    .costo-mudanza-1{
-        &-imagen{
-            img{
-                max-width: 85%;
-                max-height: 85%;
-            }
-        }
-    } 
+
     .requisitos-1{
         &-imagen{
             img{
@@ -141,6 +184,7 @@
     &-imagen{
         justify-content: center;
         display: flex;
+        padding: $sp-m $sp-xxl $sp-m $sp-xxl;
         
     }
     &-texto{
@@ -153,6 +197,21 @@
         display: flex;
         justify-content: flex-end;
     }
+    &-lista-imagen{
+        display: flex;
+    }
+}
+@media screen and (max-width:576px){
+    .costo-mudanza-1{
+        &-imagen{
+            padding: $sp-xs $sp-xs $sp-xs $sp-xs;
+            img{
+                max-width: 95%;
+                max-height: 95%;
+                
+            }
+        }
+    } 
 }
 .impuestos-1{
     display: flex;
@@ -173,6 +232,7 @@
     }
 
 }
+
 .requisitos-1{
     display: flex;
     justify-content: center;
@@ -194,6 +254,7 @@
         display: flex;
     }
 }
+
 .seguro-1{
     display: flex;
     justify-content: center;
@@ -207,7 +268,6 @@
 
     &-titulo{
         display: flex;
-        justify-content: flex-end;
     }
     &-texto{
         display: flex;
@@ -216,6 +276,7 @@
         padding-top: $sp-s;
     }
 }
+
 .tiempo-1{
     display: flex;
     justify-content: center;
@@ -235,6 +296,7 @@
     }
     &-titulo{
         display: flex;
+        justify-content: flex-end;
     }
 }
 .transporte-1{
@@ -257,7 +319,6 @@
     }
     &-titulo{
         display: flex;
-        justify-content: flex-end;
     }
 }
 .contenedores-1{
@@ -289,6 +350,10 @@
         }
     }
 }
+
+.titulo-exportacion{
+    padding: $sp-s $sp-s $sp-s 0;
+}
 .requisitos-vehiculos-1{
     display: flex;
     justify-content: center;
@@ -298,8 +363,9 @@
     &-imagen{
         justify-content: center;
         display: flex;
-        padding-top: $sp-s;
-        padding-right:$sp-s ;
+        // padding-top: $sp-s;
+        // padding-right:$sp-s ;
+        padding: $sp-s $sp-s $sp-s $sp-m;
     }
     &-texto{
         display: flex;
@@ -355,7 +421,7 @@
     }
     &-titulo{
         display: flex;
-        justify-content: flex-end;
+
     }
 }
 .impuestos-vehiculos-1{
@@ -371,6 +437,7 @@
 
     &-titulo{
         display: flex;
+        justify-content: flex-end;
     }
     &-texto{
         display: flex;

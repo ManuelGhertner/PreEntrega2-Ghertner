@@ -664,9 +664,6 @@ header {
 .preguntas h3 {
   font-size: 3.2em; }
 
-.preguntas-frecuentes-titulo-desde {
-  font-size: 3.6em; }
-
 .preguntas-frecuentes-titulo {
   font-size: 4.8em; }
 
@@ -681,12 +678,22 @@ header {
   margin: 0;
   padding: 1.6rem;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  font-weight: bold; }
 
 .preguntas-frecuentes-titulo-desde {
   margin: 0;
   padding: 0.8rem 1.6rem 0.8rem 3.2rem;
-  display: flex; }
+  display: flex;
+  font-weight: bold;
+  font-size: 3.6em; }
+
+.preguntas-frecuentes-titulo-hacia {
+  margin: 0;
+  padding: 0.8rem 1.6rem 0.8rem 3.2rem;
+  display: flex;
+  font-weight: bold;
+  font-size: 3.6em; }
 
 .volumen-mudanza-1 {
   display: flex;
@@ -695,13 +702,36 @@ header {
   padding: 3.2rem; }
   .volumen-mudanza-1-imagen {
     display: flex;
-    justify-content: center;
-    padding-top: 1.6rem; }
+    justify-content: flex-start; }
   .volumen-mudanza-1-texto {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 1.6rem; }
+
+.volumen-mudanza-2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 3.2rem; }
+  .volumen-mudanza-2-imagen {
+    display: flex;
+    justify-content: flex-start; }
+  .volumen-mudanza-2-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1.6rem; }
+
+@media screen and (max-width: 992px) {
+  .volumen-mudanza-1-imagen {
+    justify-content: center; }
+  .volumen-mudanza-2-imagen {
+    justify-content: center; } }
+
+@media screen and (max-width: 992px) {
+  .costo-mudanza-1-lista-imagen {
+    flex-direction: column; } }
 
 @media screen and (max-width: 768px) {
   .volumen-mudanza-1 h3 {
@@ -715,9 +745,6 @@ header {
 
 @media screen and (max-width: 576px) {
   .volumen-mudanza-1-imagen img {
-    max-width: 85%;
-    max-height: 85%; }
-  .costo-mudanza-1-imagen img {
     max-width: 85%;
     max-height: 85%; }
   .requisitos-1-imagen img {
@@ -747,7 +774,8 @@ header {
   padding: 3.2rem; }
   .costo-mudanza-1-imagen {
     justify-content: center;
-    display: flex; }
+    display: flex;
+    padding: 3.2rem 12rem 3.2rem 12rem; }
   .costo-mudanza-1-texto {
     display: flex;
     flex-direction: column;
@@ -756,6 +784,15 @@ header {
   .costo-mudanza-1-titulo {
     display: flex;
     justify-content: flex-end; }
+  .costo-mudanza-1-lista-imagen {
+    display: flex; }
+
+@media screen and (max-width: 576px) {
+  .costo-mudanza-1-imagen {
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem; }
+    .costo-mudanza-1-imagen img {
+      max-width: 95%;
+      max-height: 95%; } }
 
 .impuestos-1 {
   display: flex;
@@ -801,8 +838,7 @@ header {
     display: flex;
     padding-top: 1.6rem; }
   .seguro-1-titulo {
-    display: flex;
-    justify-content: flex-end; }
+    display: flex; }
   .seguro-1-texto {
     display: flex;
     flex-direction: column;
@@ -825,7 +861,8 @@ header {
     justify-content: center;
     padding-top: 1.6rem; }
   .tiempo-1-titulo {
-    display: flex; }
+    display: flex;
+    justify-content: flex-end; }
 
 .transporte-1 {
   display: flex;
@@ -843,8 +880,7 @@ header {
     justify-content: center;
     padding-top: 1.6rem; }
   .transporte-1-titulo {
-    display: flex;
-    justify-content: flex-end; }
+    display: flex; }
 
 .contenedores-1 {
   display: flex;
@@ -870,6 +906,9 @@ header {
       display: flex;
       justify-content: center; }
 
+.titulo-exportacion {
+  padding: 1.6rem 1.6rem 1.6rem 0; }
+
 .requisitos-vehiculos-1 {
   display: flex;
   justify-content: center;
@@ -879,8 +918,7 @@ header {
   .requisitos-vehiculos-1-imagen {
     justify-content: center;
     display: flex;
-    padding-top: 1.6rem;
-    padding-right: 1.6rem; }
+    padding: 1.6rem 1.6rem 1.6rem 3.2rem; }
   .requisitos-vehiculos-1-texto {
     display: flex;
     flex-direction: column;
@@ -925,8 +963,7 @@ header {
     justify-content: center;
     padding-top: 1.6rem; }
   .condicion-vehiculos-1-titulo {
-    display: flex;
-    justify-content: flex-end; }
+    display: flex; }
 
 .impuestos-vehiculos-1 {
   display: flex;
@@ -938,7 +975,8 @@ header {
     display: flex;
     padding-top: 1.6rem; }
   .impuestos-vehiculos-1-titulo {
-    display: flex; }
+    display: flex;
+    justify-content: flex-end; }
   .impuestos-vehiculos-1-texto {
     display: flex;
     flex-direction: column;
