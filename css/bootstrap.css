@@ -2470,7 +2470,7 @@ textarea.form-control-lg {
   overflow: hidden;
   text-align: start;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: no-wrap;
   pointer-events: none;
   border: 1px solid transparent;
   transform-origin: 0 0;
@@ -2567,7 +2567,7 @@ textarea.form-control-lg {
   line-height: 1.5;
   color: #212529;
   text-align: center;
-  white-space: nowrap;
+  white-space: no-wrap;
   background-color: #e9ecef;
   border: 1px solid #ced4da;
   border-radius: 0.375rem;
@@ -3234,7 +3234,7 @@ textarea.form-control-lg {
 }
 
 .dropdown-toggle {
-  white-space: nowrap;
+  white-space: no-wrap;
 }
 .dropdown-toggle::after {
   display: inline-block;
@@ -3487,7 +3487,7 @@ textarea.form-control-lg {
   color: var(--bs-dropdown-link-color);
   text-align: inherit;
   text-decoration: none;
-  white-space: nowrap;
+  white-space: no-wrap;
   background-color: transparent;
   border: 0;
 }
@@ -3516,7 +3516,7 @@ textarea.form-control-lg {
   margin-bottom: 0;
   font-size: 0.875rem;
   color: var(--bs-dropdown-header-color);
-  white-space: nowrap;
+  white-space: no-wrap;
 }
 
 .dropdown-item-text {
@@ -3808,7 +3808,7 @@ textarea.form-control-lg {
   font-size: var(--bs-navbar-brand-font-size);
   color: var(--bs-navbar-brand-color);
   text-decoration: none;
-  white-space: nowrap;
+  white-space: no-wrap;
 }
 .navbar-brand:hover, .navbar-brand:focus {
   color: var(--bs-navbar-brand-hover-color);
@@ -3894,7 +3894,7 @@ textarea.form-control-lg {
 
 @media (min-width: 576px) {
   .navbar-expand-sm {
-    flex-wrap: nowrap;
+    flex-wrap: no-wrap;
     justify-content: flex-start;
   }
   .navbar-expand-sm .navbar-nav {
@@ -3941,7 +3941,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 768px) {
   .navbar-expand-md {
-    flex-wrap: nowrap;
+    flex-wrap: no-wrap;
     justify-content: flex-start;
   }
   .navbar-expand-md .navbar-nav {
@@ -3988,7 +3988,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .navbar-expand-lg {
-    flex-wrap: nowrap;
+    flex-wrap: no-wrap;
     justify-content: flex-start;
   }
   .navbar-expand-lg .navbar-nav {
@@ -4035,7 +4035,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .navbar-expand-xl {
-    flex-wrap: nowrap;
+    flex-wrap: no-wrap;
     justify-content: flex-start;
   }
   .navbar-expand-xl .navbar-nav {
@@ -4082,7 +4082,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1400px) {
   .navbar-expand-xxl {
-    flex-wrap: nowrap;
+    flex-wrap: no-wrap;
     justify-content: flex-start;
   }
   .navbar-expand-xxl .navbar-nav {
@@ -4128,7 +4128,7 @@ textarea.form-control-lg {
   }
 }
 .navbar-expand {
-  flex-wrap: nowrap;
+  flex-wrap: no-wrap;
   justify-content: flex-start;
 }
 .navbar-expand .navbar-nav {
@@ -4641,7 +4641,7 @@ textarea.form-control-lg {
   line-height: 1;
   color: var(--bs-badge-color);
   text-align: center;
-  white-space: nowrap;
+  white-space: no-wrap;
   vertical-align: baseline;
   border-radius: var(--bs-badge-border-radius);
 }
@@ -4792,7 +4792,7 @@ textarea.form-control-lg {
   overflow: hidden;
   color: var(--bs-progress-bar-color);
   text-align: center;
-  white-space: nowrap;
+  white-space: no-wrap;
   background-color: var(--bs-progress-bar-bg);
   transition: var(--bs-progress-bar-transition);
 }
@@ -6945,7 +6945,7 @@ textarea.form-control-lg {
   margin: -1px !important;
   overflow: hidden !important;
   clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
+  white-space: no-wrap !important;
   border: 0 !important;
 }
 
@@ -6962,7 +6962,7 @@ textarea.form-control-lg {
 .text-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: no-wrap;
 }
 
 .vr {
@@ -7412,8 +7412,8 @@ textarea.form-control-lg {
   flex-wrap: wrap !important;
 }
 
-.flex-nowrap {
-  flex-wrap: nowrap !important;
+.flex-no-wrap {
+  flex-wrap: no-wrap !important;
 }
 
 .flex-wrap-reverse {
@@ -8074,8 +8074,8 @@ textarea.form-control-lg {
   white-space: normal !important;
 }
 
-.text-nowrap {
-  white-space: nowrap !important;
+.text-no-wrap {
+  white-space: no-wrap !important;
 }
 
 /* rtl:begin:remove */
@@ -8420,8 +8420,8 @@ textarea.form-control-lg {
   .flex-sm-wrap {
     flex-wrap: wrap !important;
   }
-  .flex-sm-nowrap {
-    flex-wrap: nowrap !important;
+  .flex-sm-no-wrap {
+    flex-wrap: no-wrap !important;
   }
   .flex-sm-wrap-reverse {
     flex-wrap: wrap-reverse !important;
@@ -8916,8 +8916,8 @@ textarea.form-control-lg {
   .flex-md-wrap {
     flex-wrap: wrap !important;
   }
-  .flex-md-nowrap {
-    flex-wrap: nowrap !important;
+  .flex-md-no-wrap {
+    flex-wrap: no-wrap !important;
   }
   .flex-md-wrap-reverse {
     flex-wrap: wrap-reverse !important;
@@ -9412,8 +9412,8 @@ textarea.form-control-lg {
   .flex-lg-wrap {
     flex-wrap: wrap !important;
   }
-  .flex-lg-nowrap {
-    flex-wrap: nowrap !important;
+  .flex-lg-no-wrap {
+    flex-wrap: no-wrap !important;
   }
   .flex-lg-wrap-reverse {
     flex-wrap: wrap-reverse !important;
@@ -9908,8 +9908,8 @@ textarea.form-control-lg {
   .flex-xl-wrap {
     flex-wrap: wrap !important;
   }
-  .flex-xl-nowrap {
-    flex-wrap: nowrap !important;
+  .flex-xl-no-wrap {
+    flex-wrap: no-wrap !important;
   }
   .flex-xl-wrap-reverse {
     flex-wrap: wrap-reverse !important;
@@ -10404,8 +10404,8 @@ textarea.form-control-lg {
   .flex-xxl-wrap {
     flex-wrap: wrap !important;
   }
-  .flex-xxl-nowrap {
-    flex-wrap: nowrap !important;
+  .flex-xxl-no-wrap {
+    flex-wrap: no-wrap !important;
   }
   .flex-xxl-wrap-reverse {
     flex-wrap: wrap-reverse !important;

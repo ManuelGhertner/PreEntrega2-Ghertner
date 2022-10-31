@@ -1,8 +1,6 @@
 #conozcanos {
-    display: flex;
-    flex-direction: row;
+    @include flex(row, no-wrap, center, stretch, 0);
     margin: 0 auto;
-    justify-content: center;
      h1{
         font-size: $text-l;
         padding: $sp-s $sp-s $sp-s $sp-l;
@@ -13,12 +11,11 @@
 }
 .conozcanos--article--1{
     padding: $sp-m $sp-m $sp-m $sp-m;
-    display: flex;
-    justify-content: center;
+    @include flex(row, no-wrap, center, stretch, 0);
 }
 .conozcanos--article--2{
-    align-self: center;
     padding: $sp-s $sp-s $sp-s $sp-s;
+    align-self: center;
     display: flex;
     justify-content: center;
 }
@@ -56,15 +53,13 @@
 }
 
 .iam{
-    display: flex;
+    @include flex(row, no-wrap, center, stretch, 0);
     margin: 0 auto;
     padding-top: $sp-s;
     padding-bottom: $sp-s;
-    justify-content: center;
         &-parrafo {
             padding: 0 $sp-m 0 $sp-m;
-            display: flex;
-            justify-content: center;
+            @include flex(row, no-wrap, center, stretch, 0);
         }
         &-alianzas{
             display: flex;
@@ -74,79 +69,63 @@
 }
 
 .ara{
-    display: flex;
+    @include flex(row, no-wrap, center, stretch, 0);
     margin: 0 auto;
     padding-top: $sp-s;
     padding-bottom: $sp-s;
-    justify-content: center;
         &-parrafo {
             padding: 0 $sp-m 0 $sp-m;
-            display: flex;
-            justify-content: center;
+            @include flex(row, no-wrap, center, stretch, 0);
         }
         &-alianzas{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(row, no-wrap, center, center, 0);
         }
 }
 
 .ima{
-    display: flex;
+    @include flex(row, no-wrap, center, stretch, 0);
     margin: 0 auto;
     padding-top: $sp-s;
     padding-bottom: $sp-s;
-    justify-content: center;
         &-parrafo {
             padding: 0 $sp-m 0 $sp-m;
-            display: flex;
-            justify-content: center;
+            @include flex(row, no-wrap, center, stretch, 0);
         }
         &-alianzas{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(row, no-wrap, center, center, 0);
         }
 }
 
 .moverspoe{
-    display: flex;
+    @include flex(row, no-wrap, center, stretch, 0);
     margin: 0 auto;
     padding-top: $sp-s;
     padding-bottom: $sp-s;
-    justify-content: center;
         &-parrafo {
             padding: 0 $sp-m 0 $sp-m;
-            display: flex;
-            justify-content: center;
+            @include flex(row, no-wrap, center, stretch, 0);
         }
         &-alianzas{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(row, no-wrap, center, center, 0);
         }
 }
  
 @media screen and (max-width:576px){
     .iam-parrafo {
         padding: 0 $sp-m 0 $sp-m;
-        display: flex;
-        justify-content: center;
+        @include flex(row, no-wrap, center, stretch, 0);
     }
     .ara-parrafo {
         padding: 0 $sp-m 0 $sp-m;
-        display: flex;
-        justify-content: center;
+        @include flex(row, no-wrap, center, stretch, 0);
     }
     .ima-parrafo {
         padding: 0 $sp-m 0 $sp-m;
-        display: flex;
-        justify-content: center;
+        @include flex(row, no-wrap, center, stretch, 0);
     }
     .moverspoe-parrafo {
         padding: 0 $sp-m 0 $sp-m;
-        display: flex;
-        justify-content: center;
+        @include flex(row, no-wrap, center, stretch, 0);
     }
   }
 

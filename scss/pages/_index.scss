@@ -64,26 +64,18 @@
         &-orden{
             &-iam{
                 padding: $sp-s;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex(row, nowrap, center, center, 0);
             }
             &-ima{
                 padding: $sp-s;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex(row, nowrap, center, center, 0);
             }
             &-moverspoe{
                 padding: $sp-s;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex(row, nowrap, center, center, 0);
             }
             &-ara {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex(row, nowrap, center, center, 0);
             }
         }
 
@@ -104,8 +96,7 @@
 }
 
 .banner-contenido{
-    display: flex;
-    flex-direction: column;
+    @include flex(column, nowrap, flex-start, stretch, 0);
 }
 
 .banner-texto{
@@ -325,17 +316,13 @@
         &-desde {
             margin: $sp-xs;
                 &-ubicacion{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex(row, nowrap, center, center, 0);
                 } 
         }
         &-hacia {
             margin: $sp-xs;
                 &-ubicacion{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex(row, nowrap, center, center, 0);
                 } 
         }  
     }
