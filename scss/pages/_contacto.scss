@@ -1,10 +1,68 @@
-#contacto h1{
-    font-size: $text-xxl;
+
+    .map-responsive{
+
+        overflow:hidden;
+    
+        padding-bottom:15%;
+    
+        position:relative;
+    
+        height:0;
+    
     }
-    #contacto h2{
-        font-size: $text-l;
+    
+    .map-responsive iframe{
+    
+        left:0;
+    
+        top:0;
+    
+        max-height:100%;
+    
+        width:100%;
+    
+        position:absolute;
+    
     }
-    #contacto p{
-        font-size: $text-s;
-        
+.contenedor-mapa{
+    max-height: 40rem;
+}
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        padding: $sp-s 0 $sp-s $sp-s;
+        &-email{
+            font-size: $text-m;
+        }
+        &-whatsapp{
+            font-size: $text-m;
+        }
+        &-direccion{
+            font-size: $text-m;
+        }
+        &-titulo{
+            font-size: $text-xxl;
+            &-email{
+                font-size: $text-l;
+            }
+            &-whatsapp{
+                font-size: $text-l;
+            }
+            &-direccion{
+                font-size: $text-l;
+            }
+        }
     }
+    @media screen and (max-width:992px) {
+.contacto{
+    font-size: 0.7rem;
+}
+.map-responsive{
+    padding-bottom:25%;
+}
+    }
+    @media screen and (max-width:768px) {
+        .map-responsive{
+            padding-bottom:35%;
+        }
+            }

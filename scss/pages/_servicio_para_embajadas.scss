@@ -1,26 +1,326 @@
-.presupuesto-embajadas{
-    background-color: $primary;
-    color: $light;
-    font-size:$text-xl;
-}
+
 .formulario-embajada h2{
     font-size: $text-l;
 }
-.formulario-embajada h3{
-    font-size:$text-s;
-}
 
 
-#servicio-embajadas h1{
-    font-size: $text-xxl;
-}
-#servicio-embajadas p{
-    font-size: $text-s;
-}
 .enviar{
     background-color: $accent;
     color: $primary;
 }
 .reset{
     color: $primary;
+}
+
+
+.servicio-para-embajadas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: $sp-m;
+        margin: 0 auto;
+        &-imagen{
+            justify-content: center;
+            display: flex;
+            padding-top: $sp-s;
+        }
+        &-texto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: $sp-s;
+            font-size: $text-s;
+        }
+        &-titulo{
+            font-size: $text-xxl;
+        }
+}
+@media screen and (max-width:576px) {
+    .servicio-para-embajadas{
+            &-imagen{
+                img{
+                    max-width: 85%;
+                    max-height: 85%;
+                }
+            }
+            &-titulo{
+                font-size: $text-l;
+            }
+    }
+    .presupuesto-embajadas{
+            h2{
+                font-size:$text-l;
+            }
+    }
+}
+.presupuesto-embajadas{
+    background-color: $primary;
+    color: $light;
+    display: flex;
+    justify-content: center;
+    padding: $sp-m 0 $sp-m 0;
+    background-image:linear-gradient(to bottom,rgba(2,0,36,1) 0%, rgba(0,72,124,1) 49%, rgba(1,78,99,1) 100%);
+        h2{
+            font-size:$text-xl;
+        }
+}
+@media screen and (max-width:576px) {
+    .presupuesto-embajadas{
+            h2{
+                font-size:$text-m;
+            }
+    }
+}
+
+.formulario-embajada{
+    &-datos-de-contacto{
+        &-contenedor{
+            display: flex;
+            &-nombre{
+                &-1{
+                   padding-right: $sp-xs;
+                }
+           }
+           &-apellido{
+               &-1{
+                   padding-right: $sp-xs;
+                }
+           }
+           &-email{
+               &-1{
+                   padding-right: $sp-xs;
+                }
+           }
+        }
+        &-nombre{
+            font-size: $text-s;
+        }
+        &-apellido{
+           font-size: $text-s;
+        }
+        &-email{
+           font-size: $text-s;
+        }
+        &-titulo{
+            padding: $sp-s 0 $sp-s 0 ;
+            display: flex;
+        }
+
+        &-telefono{
+            font-size: $text-s;
+        }
+        &-aspen{
+            font-size: $text-s;
+            padding: $sp-xs 0 $sp-xs 0 ;
+        }
+        &-franquicia{
+            font-size: $text-s;
+            padding: $sp-xs 0 $sp-xs 0 ;
+        }
+        &-envio{
+            font-size: $text-s;
+            padding: $sp-xs 0 $sp-xs 0 ;
+        }
+    }
+    &-detalles-mudanza{
+        &-titulo{
+            font-size: $text-s;
+          padding: $sp-s 0 $sp-s 0 ;
+        }
+        &-fecha{
+            font-size: $text-s;
+              padding: 0 0 $sp-s 0 ;
+        }
+        &-origen{
+            font-size: $text-s;
+            padding: 0 ;
+            &-pais-1{
+                padding:0 $sp-xs 0 0;
+            }
+            &-ciudad-1{
+                padding:0 $sp-xs 0 0;
+            }
+            &-separador{
+                padding: $sp-xs 0 $sp-xs 0;
+                display: flex;
+                justify-content: space-around;
+                &-2{
+                    display: flex;
+                    padding: $sp-xs $sp-xs $sp-xs 0.4rem;
+                }
+            }
+        }
+        &-destino{
+            font-size: $text-s;
+            padding: 0 ;
+            &-pais-1{
+                padding:0 $sp-xs 0 0;
+            }
+            &-ciudad-1{
+                padding:0 $sp-xs 0 0;
+            }
+            &-separador{
+                padding: $sp-xs 0 $sp-xs 0;
+                display: flex;
+                justify-content: space-around;
+                &-2{
+                    display: flex;
+                    padding: $sp-xs $sp-xs $sp-xs 0.4rem;
+                }
+            }
+        }
+        &-botones{
+            display: flex;
+            &-enviar{
+                font-size: $text-s;
+                padding: $sp-xs ;
+                margin-right: $sp-s;
+                margin-bottom: $sp-s;
+            }
+            &-reset{
+                font-size: $text-s;
+                padding: $sp-xs ;
+                color: $light;
+                margin-bottom: $sp-s;
+            }
+        }
+
+    }
+
+}
+@media screen and (max-width:1400px) {
+    .formulario-embajada-detalles-mudanza-origen-contenedor{
+        display: flex;
+    }
+    .formulario-embajada-detalles-mudanza-destino-contenedor{
+        display: flex;
+    }
+}
+@media screen and (max-width:768px) {
+.formulario-embajada-detalles-mudanza{
+    &-origen{
+        display: flex;
+        flex-direction: column;
+        &-contenedor{
+            display: flex;
+            flex-direction: column;
+        }
+        &-separador{
+            display: flex;
+            flex-direction: column;
+            padding: $sp-xs 0 0 0;
+        }
+        &-separador-2{
+            padding-left: 0;
+        }
+        &-pais-1{
+            padding-left: 0;
+            padding-bottom: $sp-xs ;
+        }
+        &-ciudad-1{
+                   padding: $sp-xs 0 $sp-xs 0 ;
+        }
+        &-calle-1{
+            padding: $sp-xs 0 $sp-xs 0 ;
+        }
+    }
+    &-destino{
+        display: flex;
+        flex-direction: column;
+        &-contenedor{
+            display: flex;
+            flex-direction: column;
+        }
+        &-separador{
+            display: flex;
+            flex-direction: column;
+            padding: $sp-xs 0 0 0;
+        }
+        &-separador-2{
+            padding-left: 0;
+        }
+        &-pais-1{
+            padding-left: 0;
+            padding-bottom: $sp-xs ;
+        }
+        &-ciudad-1{
+                   padding: $sp-xs 0 $sp-xs 0 ;
+        }
+        &-calle-1{
+            padding: $sp-xs 0 $sp-xs 0 ;
+        }
+    }
+ 
+}
+.formulario-embajada-datos-de-contacto-contenedor{
+    display: flex;
+    flex-direction: column;
+    &-nombre-1{
+        padding: $sp-xs ;
+    }
+    &-apellido-1{
+        padding: $sp-xs ;
+    }
+    &-email-1{
+        padding: $sp-xs ;
+    }
+    &-telefono-1{
+        padding: $sp-xs ;
+    }
+ 
+}
+}
+@media screen and (max-width:768px){
+    .formulario-embajada-detalles-mudanza{
+        &-origen{
+            &-separador{
+                padding-left: $sp-xs;
+                &-2{
+                    padding-left: $sp-xs;
+                }
+            }
+        }
+        &-destino{
+            &-separador{
+                padding-left: $sp-xs;
+                &-2{
+                    padding-left: $sp-xs;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:576px){
+    .formulario-embajada-detalles-mudanza{
+        &-origen{
+            padding-left: $sp-xs;
+            &-separador{
+                padding-left: $sp-xs;
+                &-2{
+                    padding-left: $sp-xs;
+                }
+            }
+        }
+        &-destino{
+            padding-left: $sp-xs;
+        }
+        &-fecha{
+            padding-left: $sp-xs;
+        }
+        &-botones{
+            padding-left: $sp-s;
+        }
+}
+    .formulario-embajada-datos-de-contacto{
+        &-aspen{
+            padding-left: $sp-xs;
+        }
+        &-franquicia{
+            padding-left: $sp-xs;
+        }
+        &-envio{
+            padding-left: $sp-xs;
+        }
+
+    }
 }

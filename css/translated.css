@@ -49,6 +49,9 @@ ol, ul, dl {
 .btn-warning {
   --bs-btn-hover-color: none; }
 
+h2 {
+  margin: 0; }
+
 /*partials*/
 footer {
   background-color: #00487C;
@@ -377,14 +380,50 @@ header {
   grid-row: 8 / 9;
   align-self: center; }
 
-#contacto h1 {
-  font-size: 4.8em; }
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 15%;
+  position: relative;
+  height: 0; }
 
-#contacto h2 {
-  font-size: 3.2em; }
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  max-height: 100%;
+  width: 100%;
+  position: absolute; }
 
-#contacto p {
-  font-size: 1.6em; }
+.contenedor-mapa {
+  max-height: 40rem; }
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem 0 1.6rem 1.6rem; }
+  .contacto-email {
+    font-size: 2em; }
+  .contacto-whatsapp {
+    font-size: 2em; }
+  .contacto-direccion {
+    font-size: 2em; }
+  .contacto-titulo {
+    font-size: 4.8em; }
+    .contacto-titulo-email {
+      font-size: 3.2em; }
+    .contacto-titulo-whatsapp {
+      font-size: 3.2em; }
+    .contacto-titulo-direccion {
+      font-size: 3.2em; }
+
+@media screen and (max-width: 992px) {
+  .contacto {
+    font-size: 0.7rem; }
+  .map-responsive {
+    padding-bottom: 25%; } }
+
+@media screen and (max-width: 768px) {
+  .map-responsive {
+    padding-bottom: 35%; } }
 
 .pedido-presupuesto {
   background-color: #00487C;
@@ -731,29 +770,51 @@ header {
 
 @media screen and (max-width: 992px) {
   .costo-mudanza-1-lista-imagen {
+    flex-direction: column; }
+  .costo-mudanza-2-lista-imagen {
     flex-direction: column; } }
 
 @media screen and (max-width: 768px) {
   .volumen-mudanza-1 h3 {
     font-size: 2em; }
+  .volumen-mudanza-2 h3 {
+    font-size: 2em; }
   .preguntas-frecuentes-titulo {
     font-size: 3.2em;
     font-weight: bold; }
-  .preguntas-frecuentes-titulo-desde {
-    font-size: 2em;
-    font-weight: bold; } }
+    .preguntas-frecuentes-titulo-desde {
+      font-size: 2em;
+      font-weight: bold; }
+    .preguntas-frecuentes-titulo-hacia {
+      font-size: 2em;
+      font-weight: bold; }
+  .costo-mudanza-2-imagen img {
+    max-width: 85%;
+    max-height: 85%; } }
 
 @media screen and (max-width: 576px) {
   .volumen-mudanza-1-imagen img {
     max-width: 85%;
     max-height: 85%; }
+  .volumen-mudanza-2-imagen img {
+    max-width: 85%;
+    max-height: 85%; }
   .requisitos-1-imagen img {
+    max-width: 85%;
+    max-height: 85%; }
+  .requisitos-2-imagen img {
     max-width: 85%;
     max-height: 85%; }
   .seguro-1-imagen img {
     max-width: 85%;
     max-height: 85%; }
+  .seguro-2-imagen img {
+    max-width: 85%;
+    max-height: 85%; }
   .transporte-1-imagen img {
+    max-width: 85%;
+    max-height: 85%; }
+  .transporte-2-imagen img {
     max-width: 85%;
     max-height: 85%; }
   .contenedores-1-imagenes-imagen-1 img {
@@ -762,7 +823,19 @@ header {
   .contenedores-1-imagenes-imagen-2 img {
     max-width: 90%;
     max-height: 90%; }
+  .contenedores-2-imagenes-imagen-1 img {
+    max-width: 90%;
+    max-height: 90%; }
+  .contenedores-2-imagenes-imagen-2 img {
+    max-width: 90%;
+    max-height: 90%; }
   .requisitos-vehiculos-1-imagen img {
+    max-width: 85%;
+    max-height: 85%; }
+  .requisitos-vehiculos-2-imagen img {
+    max-width: 85%;
+    max-height: 85%; }
+  .ciffob-2-imagen img {
     max-width: 85%;
     max-height: 85%; } }
 
@@ -787,10 +860,40 @@ header {
   .costo-mudanza-1-lista-imagen {
     display: flex; }
 
+.costo-mudanza-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 3.2rem; }
+  .costo-mudanza-2-imagen {
+    justify-content: center;
+    display: flex;
+    padding: 3.2rem 12rem 3.2rem 12rem; }
+  .costo-mudanza-2-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+  .costo-mudanza-2-titulo {
+    display: flex;
+    justify-content: flex-end; }
+  .costo-mudanza-2-lista-imagen {
+    display: flex; }
+
+@media screen and (max-width: 768px) {
+  .costo-mudanza-2-imagen {
+    padding: 1.6rem; } }
+
 @media screen and (max-width: 576px) {
   .costo-mudanza-1-imagen {
     padding: 0.8rem 0.8rem 0.8rem 0.8rem; }
     .costo-mudanza-1-imagen img {
+      max-width: 95%;
+      max-height: 95%; }
+  .costo-mudanza-2-imagen {
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem; }
+    .costo-mudanza-2-imagen img {
       max-width: 95%;
       max-height: 95%; } }
 
@@ -805,6 +908,22 @@ header {
     display: flex;
     padding-top: 1.6rem; }
   .impuestos-1-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+
+.impuestos-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .impuestos-2-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem; }
+  .impuestos-2-texto {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -828,6 +947,24 @@ header {
   .requisitos-1-titulo {
     display: flex; }
 
+.requisitos-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .requisitos-2-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem; }
+  .requisitos-2-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+  .requisitos-2-titulo {
+    display: flex; }
+
 .seguro-1 {
   display: flex;
   justify-content: center;
@@ -840,6 +977,23 @@ header {
   .seguro-1-titulo {
     display: flex; }
   .seguro-1-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1.6rem; }
+
+.seguro-2 {
+  display: flex;
+  justify-content: center;
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .seguro-2-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem; }
+  .seguro-2-titulo {
+    display: flex; }
+  .seguro-2-texto {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -864,6 +1018,25 @@ header {
     display: flex;
     justify-content: flex-end; }
 
+.tiempo-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .tiempo-2-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem; }
+  .tiempo-2-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+  .tiempo-2-titulo {
+    display: flex;
+    justify-content: flex-end; }
+
 .transporte-1 {
   display: flex;
   justify-content: center;
@@ -880,6 +1053,24 @@ header {
     justify-content: center;
     padding-top: 1.6rem; }
   .transporte-1-titulo {
+    display: flex; }
+
+.transporte-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 3.2rem; }
+  .transporte-2-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem; }
+  .transporte-2-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+  .transporte-2-titulo {
     display: flex; }
 
 .contenedores-1 {
@@ -906,7 +1097,34 @@ header {
       display: flex;
       justify-content: center; }
 
+.contenedores-2 {
+  display: flex;
+  justify-content: center;
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .contenedores-2-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1.6rem; }
+  .contenedores-2-titulo {
+    display: flex; }
+  .contenedores-2-imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+    .contenedores-2-imagenes-imagen-1 {
+      display: flex;
+      justify-content: center; }
+    .contenedores-2-imagenes-imagen-2 {
+      display: flex;
+      justify-content: center; }
+
 .titulo-exportacion {
+  padding: 1.6rem 1.6rem 1.6rem 0; }
+
+.titulo-importacion {
   padding: 1.6rem 1.6rem 1.6rem 0; }
 
 .requisitos-vehiculos-1 {
@@ -927,6 +1145,24 @@ header {
   .requisitos-vehiculos-1-titulo {
     display: flex; }
 
+.requisitos-vehiculos-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .requisitos-vehiculos-2-imagen {
+    justify-content: center;
+    display: flex;
+    padding: 1.6rem 1.6rem 1.6rem 3.2rem; }
+  .requisitos-vehiculos-2-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+  .requisitos-vehiculos-2-titulo {
+    display: flex; }
+
 .vehiculos-interior-1 {
   display: flex;
   justify-content: center;
@@ -943,6 +1179,25 @@ header {
     justify-content: center;
     padding-top: 1.6rem; }
   .vehiculos-interior-1-titulo {
+    display: flex;
+    justify-content: flex-end; }
+
+.vehiculos-interior-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 3.2rem; }
+  .vehiculos-interior-2-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem; }
+  .vehiculos-interior-2-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+  .vehiculos-interior-2-titulo {
     display: flex;
     justify-content: flex-end; }
 
@@ -965,6 +1220,25 @@ header {
   .condicion-vehiculos-1-titulo {
     display: flex; }
 
+.condicion-vehiculos-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .condicion-vehiculos-2-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem;
+    padding-right: 1.6rem; }
+  .condicion-vehiculos-2-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+  .condicion-vehiculos-2-titulo {
+    display: flex; }
+
 .impuestos-vehiculos-1 {
   display: flex;
   justify-content: center;
@@ -983,22 +1257,48 @@ header {
     justify-content: flex-start;
     padding-top: 1.6rem; }
 
-.presupuesto-embajadas {
-  background-color: #00487C;
-  color: #FFFFFF;
-  font-size: 3.6em; }
+.impuestos-vehiculos-2 {
+  display: flex;
+  justify-content: center;
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .impuestos-vehiculos-2-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem; }
+  .impuestos-vehiculos-2-titulo {
+    display: flex;
+    justify-content: flex-end; }
+  .impuestos-vehiculos-2-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1.6rem; }
+
+.ciffob-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .ciffob-2-imagen {
+    justify-content: center;
+    display: flex;
+    padding: 1.6rem 1.6rem 1.6rem 3.2rem; }
+  .ciffob-2-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem; }
+  .ciffob-2-titulo {
+    display: flex; }
+
+.presupuesto-titulo {
+  font-size: 3.6em;
+  padding-top: 1.6rem; }
 
 .formulario-embajada h2 {
   font-size: 3.2em; }
-
-.formulario-embajada h3 {
-  font-size: 1.6em; }
-
-#servicio-embajadas h1 {
-  font-size: 4.8em; }
-
-#servicio-embajadas p {
-  font-size: 1.6em; }
 
 .enviar {
   background-color: #FFEB03;
@@ -1006,3 +1306,220 @@ header {
 
 .reset {
   color: #00487C; }
+
+.servicio-para-embajadas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.2rem;
+  margin: 0 auto; }
+  .servicio-para-embajadas-imagen {
+    justify-content: center;
+    display: flex;
+    padding-top: 1.6rem; }
+  .servicio-para-embajadas-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.6rem;
+    font-size: 1.6em; }
+  .servicio-para-embajadas-titulo {
+    font-size: 4.8em; }
+
+@media screen and (max-width: 576px) {
+  .servicio-para-embajadas-imagen img {
+    max-width: 85%;
+    max-height: 85%; }
+  .servicio-para-embajadas-titulo {
+    font-size: 3.2em; }
+  .presupuesto-embajadas h2 {
+    font-size: 3.2em; } }
+
+.presupuesto-embajadas {
+  background-color: #00487C;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  padding: 3.2rem 0 3.2rem 0;
+  background-image: linear-gradient(to bottom, #020024 0%, #00487c 49%, #014e63 100%); }
+  .presupuesto-embajadas h2 {
+    font-size: 3.6em; }
+
+@media screen and (max-width: 576px) {
+  .presupuesto-embajadas h2 {
+    font-size: 2em; } }
+
+.formulario-embajada-datos-de-contacto-contenedor {
+  display: flex; }
+  .formulario-embajada-datos-de-contacto-contenedor-nombre-1 {
+    padding-right: 0.8rem; }
+  .formulario-embajada-datos-de-contacto-contenedor-apellido-1 {
+    padding-right: 0.8rem; }
+  .formulario-embajada-datos-de-contacto-contenedor-email-1 {
+    padding-right: 0.8rem; }
+
+.formulario-embajada-datos-de-contacto-nombre {
+  font-size: 1.6em; }
+
+.formulario-embajada-datos-de-contacto-apellido {
+  font-size: 1.6em; }
+
+.formulario-embajada-datos-de-contacto-email {
+  font-size: 1.6em; }
+
+.formulario-embajada-datos-de-contacto-titulo {
+  padding: 1.6rem 0 1.6rem 0;
+  display: flex; }
+
+.formulario-embajada-datos-de-contacto-telefono {
+  font-size: 1.6em; }
+
+.formulario-embajada-datos-de-contacto-aspen {
+  font-size: 1.6em;
+  padding: 0.8rem 0 0.8rem 0; }
+
+.formulario-embajada-datos-de-contacto-franquicia {
+  font-size: 1.6em;
+  padding: 0.8rem 0 0.8rem 0; }
+
+.formulario-embajada-datos-de-contacto-envio {
+  font-size: 1.6em;
+  padding: 0.8rem 0 0.8rem 0; }
+
+.formulario-embajada-detalles-mudanza-titulo {
+  font-size: 1.6em;
+  padding: 1.6rem 0 1.6rem 0; }
+
+.formulario-embajada-detalles-mudanza-fecha {
+  font-size: 1.6em;
+  padding: 0 0 1.6rem 0; }
+
+.formulario-embajada-detalles-mudanza-origen {
+  font-size: 1.6em;
+  padding: 0; }
+  .formulario-embajada-detalles-mudanza-origen-pais-1 {
+    padding: 0 0.8rem 0 0; }
+  .formulario-embajada-detalles-mudanza-origen-ciudad-1 {
+    padding: 0 0.8rem 0 0; }
+  .formulario-embajada-detalles-mudanza-origen-separador {
+    padding: 0.8rem 0 0.8rem 0;
+    display: flex;
+    justify-content: space-around; }
+    .formulario-embajada-detalles-mudanza-origen-separador-2 {
+      display: flex;
+      padding: 0.8rem 0.8rem 0.8rem 0.4rem; }
+
+.formulario-embajada-detalles-mudanza-destino {
+  font-size: 1.6em;
+  padding: 0; }
+  .formulario-embajada-detalles-mudanza-destino-pais-1 {
+    padding: 0 0.8rem 0 0; }
+  .formulario-embajada-detalles-mudanza-destino-ciudad-1 {
+    padding: 0 0.8rem 0 0; }
+  .formulario-embajada-detalles-mudanza-destino-separador {
+    padding: 0.8rem 0 0.8rem 0;
+    display: flex;
+    justify-content: space-around; }
+    .formulario-embajada-detalles-mudanza-destino-separador-2 {
+      display: flex;
+      padding: 0.8rem 0.8rem 0.8rem 0.4rem; }
+
+.formulario-embajada-detalles-mudanza-botones {
+  display: flex; }
+  .formulario-embajada-detalles-mudanza-botones-enviar {
+    font-size: 1.6em;
+    padding: 0.8rem;
+    margin-right: 1.6rem;
+    margin-bottom: 1.6rem; }
+  .formulario-embajada-detalles-mudanza-botones-reset {
+    font-size: 1.6em;
+    padding: 0.8rem;
+    color: #FFFFFF;
+    margin-bottom: 1.6rem; }
+
+@media screen and (max-width: 1400px) {
+  .formulario-embajada-detalles-mudanza-origen-contenedor {
+    display: flex; }
+  .formulario-embajada-detalles-mudanza-destino-contenedor {
+    display: flex; } }
+
+@media screen and (max-width: 768px) {
+  .formulario-embajada-detalles-mudanza-origen {
+    display: flex;
+    flex-direction: column; }
+    .formulario-embajada-detalles-mudanza-origen-contenedor {
+      display: flex;
+      flex-direction: column; }
+    .formulario-embajada-detalles-mudanza-origen-separador {
+      display: flex;
+      flex-direction: column;
+      padding: 0.8rem 0 0 0; }
+    .formulario-embajada-detalles-mudanza-origen-separador-2 {
+      padding-left: 0; }
+    .formulario-embajada-detalles-mudanza-origen-pais-1 {
+      padding-left: 0;
+      padding-bottom: 0.8rem; }
+    .formulario-embajada-detalles-mudanza-origen-ciudad-1 {
+      padding: 0.8rem 0 0.8rem 0; }
+    .formulario-embajada-detalles-mudanza-origen-calle-1 {
+      padding: 0.8rem 0 0.8rem 0; }
+  .formulario-embajada-detalles-mudanza-destino {
+    display: flex;
+    flex-direction: column; }
+    .formulario-embajada-detalles-mudanza-destino-contenedor {
+      display: flex;
+      flex-direction: column; }
+    .formulario-embajada-detalles-mudanza-destino-separador {
+      display: flex;
+      flex-direction: column;
+      padding: 0.8rem 0 0 0; }
+    .formulario-embajada-detalles-mudanza-destino-separador-2 {
+      padding-left: 0; }
+    .formulario-embajada-detalles-mudanza-destino-pais-1 {
+      padding-left: 0;
+      padding-bottom: 0.8rem; }
+    .formulario-embajada-detalles-mudanza-destino-ciudad-1 {
+      padding: 0.8rem 0 0.8rem 0; }
+    .formulario-embajada-detalles-mudanza-destino-calle-1 {
+      padding: 0.8rem 0 0.8rem 0; }
+  .formulario-embajada-datos-de-contacto-contenedor {
+    display: flex;
+    flex-direction: column; }
+    .formulario-embajada-datos-de-contacto-contenedor-nombre-1 {
+      padding: 0.8rem; }
+    .formulario-embajada-datos-de-contacto-contenedor-apellido-1 {
+      padding: 0.8rem; }
+    .formulario-embajada-datos-de-contacto-contenedor-email-1 {
+      padding: 0.8rem; }
+    .formulario-embajada-datos-de-contacto-contenedor-telefono-1 {
+      padding: 0.8rem; } }
+
+@media screen and (max-width: 768px) {
+  .formulario-embajada-detalles-mudanza-origen-separador {
+    padding-left: 0.8rem; }
+    .formulario-embajada-detalles-mudanza-origen-separador-2 {
+      padding-left: 0.8rem; }
+  .formulario-embajada-detalles-mudanza-destino-separador {
+    padding-left: 0.8rem; }
+    .formulario-embajada-detalles-mudanza-destino-separador-2 {
+      padding-left: 0.8rem; } }
+
+@media screen and (max-width: 576px) {
+  .formulario-embajada-detalles-mudanza-origen {
+    padding-left: 0.8rem; }
+    .formulario-embajada-detalles-mudanza-origen-separador {
+      padding-left: 0.8rem; }
+      .formulario-embajada-detalles-mudanza-origen-separador-2 {
+        padding-left: 0.8rem; }
+  .formulario-embajada-detalles-mudanza-destino {
+    padding-left: 0.8rem; }
+  .formulario-embajada-detalles-mudanza-fecha {
+    padding-left: 0.8rem; }
+  .formulario-embajada-detalles-mudanza-botones {
+    padding-left: 1.6rem; }
+  .formulario-embajada-datos-de-contacto-aspen {
+    padding-left: 0.8rem; }
+  .formulario-embajada-datos-de-contacto-franquicia {
+    padding-left: 0.8rem; }
+  .formulario-embajada-datos-de-contacto-envio {
+    padding-left: 0.8rem; } }
