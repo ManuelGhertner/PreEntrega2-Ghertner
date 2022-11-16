@@ -4,6 +4,7 @@
      h1{
         font-size: $text-l;
         padding: $sp-s $sp-s $sp-s $sp-l;
+        font-weight: bold;
     }
      p{
         font-size: $text-s;
@@ -83,7 +84,7 @@
 }
 
 .ima{
-    @include flex(row, no-wrap, center, stretch, 0);
+    @include flex(row, no-wrap, center, center, 0);
     margin: 0 auto;
     padding-top: $sp-s;
     padding-bottom: $sp-s;
@@ -97,7 +98,7 @@
 }
 
 .moverspoe{
-    @include flex(row, no-wrap, center, stretch, 0);
+    @include flex(row, no-wrap, center, center, 0);
     margin: 0 auto;
     padding-top: $sp-s;
     padding-bottom: $sp-s;

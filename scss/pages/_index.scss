@@ -60,22 +60,23 @@
     font-size: $text-m;
         &-titulo{
         padding: $sp-s;
+        font-weight: bold;
         }
         &-orden{
             &-iam{
                 padding: $sp-s;
-                @include flex(row, nowrap, center, center, 0);
+                @include flex(row, no-wrap, center, center, 0);
             }
             &-ima{
                 padding: $sp-s;
-                @include flex(row, nowrap, center, center, 0);
+                @include flex(row, no-wrap, center, center, 0);
             }
             &-moverspoe{
                 padding: $sp-s;
-                @include flex(row, nowrap, center, center, 0);
+                @include flex(row, no-wrap, center, center, 0);
             }
             &-ara {
-                @include flex(row, nowrap, center, center, 0);
+                @include flex(row, no-wrap, center, center, 0);
             }
         }
 
@@ -96,7 +97,7 @@
 }
 
 .banner-contenido{
-    @include flex(column, nowrap, flex-start, stretch, 0);
+    @include flex(column, no-wrap, flex-start, stretch, 0);
 }
 
 .banner-texto{
@@ -186,7 +187,7 @@
 
 .servicios{
     padding-top: $sp-m;
-    padding-bottom: $sp-s;
+    padding-bottom: $sp-m;
         &-desde{
             font-size: $text-l;
             color: $light;
@@ -316,13 +317,13 @@
         &-desde {
             margin: $sp-xs;
                 &-ubicacion{
-                    @include flex(row, nowrap, center, center, 0);
+                    @include flex(row, no-wrap, center, center, 0);
                 } 
         }
         &-hacia {
             margin: $sp-xs;
                 &-ubicacion{
-                    @include flex(row, nowrap, center, center, 0);
+                    @include flex(row, no-wrap, center, center, 0);
                 } 
         }  
     }

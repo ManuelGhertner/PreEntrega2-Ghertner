@@ -28,8 +28,7 @@
     max-height: 40rem;
 }
     .contacto{
-        display: flex;
-        flex-direction: column;
+        @include flex(column, no-wrap, flex-start, stretch, 0);
         padding: $sp-s 0 $sp-s $sp-s;
         &-email{
             font-size: $text-m;

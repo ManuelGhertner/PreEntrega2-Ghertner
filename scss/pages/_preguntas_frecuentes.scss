@@ -22,8 +22,7 @@
 .preguntas-frecuentes-titulo{
     margin: 0;
     padding: $sp-s;
-    display: flex;
-    justify-content: center;
+    @include flex(row, no-wrap, center, stretch, 0);
     font-weight: bold;
 
 }
@@ -31,14 +30,14 @@
     &-desde{
         margin: 0;
         padding: $sp-xs $sp-s $sp-xs $sp-m;
-        display: flex;
+        @include flex(row, no-wrap, flex-start, stretch, 0);
         font-weight: bold;
         font-size: $text-xl;
     }
     &-hacia{
         margin: 0;
         padding: $sp-xs $sp-s $sp-xs $sp-m;
-        display: flex;
+        @include flex(row, no-wrap, flex-start, stretch, 0);
         font-weight: bold;
         font-size: $text-xl;
     }
@@ -47,35 +46,27 @@
 
 .volumen-mudanza{
     &-1{
-        display: flex;
-        justify-content: space-between;
+        @include flex(row, no-wrap, space-between, stretch, 0);
         margin: 0 auto;
         padding: $sp-m;
         &-imagen{
-            display: flex;
-            justify-content: flex-start;
+            @include flex(row, no-wrap, flex-start, stretch, 0);
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            @include flex(column, no-wrap, flex-start, stretch, 0);
             padding-top: $sp-s;
         }
 
     }
     &-2{
-        display: flex;
-        justify-content: space-between;
+        @include flex(row, no-wrap, space-between, stretch, 0);
         margin: 0 auto;
         padding: $sp-m;
         &-imagen{
-            display: flex;
-            justify-content: flex-start;
+            @include flex(row, no-wrap, flex-start, stretch, 0);
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            @include flex(column, no-wrap, flex-start, stretch, 0);
             padding-top: $sp-s;
         }
     }
@@ -278,52 +269,38 @@
 
 .costo-mudanza{
     &-1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, no-wrap, center, center, 0);
         margin: 0 auto;
         padding: $sp-m;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding: $sp-m $sp-xxl $sp-m $sp-xxl;
-            
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-titulo{
-            display: flex;
-            justify-content: flex-end;
+            @include flex(row, no-wrap, flex-end, stretch, 0);
         }
         &-lista-imagen{
             display: flex;
         }
     }
     &-2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, no-wrap, center, center, 0);
         margin: 0 auto;
         padding: $sp-m;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding: $sp-m $sp-xxl $sp-m $sp-xxl;
-            
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-titulo{
-            display: flex;
-            justify-content: flex-end;
+            @include flex(row, no-wrap, flex-end, stretch, 0);
         }
         &-lista-imagen{
             display: flex;
@@ -364,38 +341,28 @@
 }
 .impuestos{
     &-1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, no-wrap, center, center, 0);
         padding: $sp-m;
         margin: 0 auto;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
     }
     &-2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, no-wrap, center, center, 0);
         padding: $sp-m;
         margin: 0 auto;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
     }
@@ -403,20 +370,15 @@
 
 .requisitos{
     &-1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, no-wrap, center, center, 0);
         padding: $sp-m;
         margin: 0 auto;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-titulo{
@@ -424,20 +386,15 @@
         }
     }
     &-2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, no-wrap, center, center, 0);
         padding: $sp-m;
         margin: 0 auto;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-titulo{
@@ -448,113 +405,84 @@
 
 .seguro{
     &-1{
-        display: flex;
-        justify-content: center;
+        @include flex(row, no-wrap, center, stretch, 0);
         padding: $sp-m;
         margin: 0 auto;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
-    
         &-titulo{
             display: flex;
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            @include flex(column, no-wrap, flex-start, stretch, 0);
             padding-top: $sp-s;
         }  
     }
     &-2{
-        display: flex;
-        justify-content: center;
+        @include flex(row, no-wrap, center, stretch, 0);
         padding: $sp-m;
         margin: 0 auto;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
-    
         &-titulo{
             display: flex;
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            @include flex(column, no-wrap, flex-start, stretch, 0);
             padding-top: $sp-s;
         }  
     }
-
 }
 
 .tiempo{
     &-1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, no-wrap, center, center, 0);
         padding: $sp-m;
         margin: 0 auto;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-titulo{
-            display: flex;
-            justify-content: flex-end;
+            @include flex(row, no-wrap, flex-end, stretch, 0);
         } 
     }
     &-2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, no-wrap, center, center, 0);
         padding: $sp-m;
         margin: 0 auto;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-titulo{
-            display: flex;
-            justify-content: flex-end;
+            @include flex(row, no-wrap, flex-end, stretch, 0);
         } 
     }
 }
 .transporte{
     &-1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, no-wrap, center, center, 0);
         margin: 0 auto;
         padding: $sp-m;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
-            
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-titulo{
@@ -562,21 +490,15 @@
         }
     }
     &-2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, no-wrap, center, center, 0);
         margin: 0 auto;
         padding: $sp-m;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
-            
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-titulo{
@@ -586,64 +508,49 @@
 }
 .contenedores{
     &-1{
-        display: flex;
-        justify-content: center;
+        @include flex(row, no-wrap, center, stretch, 0);
         padding: $sp-m;
         margin: 0 auto;
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            @include flex(column, no-wrap, flex-start, stretch, 0);
             padding-top: $sp-s;
         }
         &-titulo{
             display: flex;
         }
         &-imagenes{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
             &-imagen-1{
-                display: flex;
-                justify-content: center; 
+                @include flex(row, no-wrap, center, stretch, 0);
             }
             &-imagen-2{
-                display: flex;
-                justify-content: center; 
+                @include flex(row, no-wrap, center, stretch, 0);
             }
         }
     }
     &-2{
-        display: flex;
-        justify-content: center;
+        @include flex(row, no-wrap, center, stretch, 0);
         padding: $sp-m;
         margin: 0 auto;
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            @include flex(column, no-wrap, flex-start, stretch, 0);
             padding-top: $sp-s;
         }
         &-titulo{
             display: flex;
         }
         &-imagenes{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
             &-imagen-1{
-                display: flex;
-                justify-content: center; 
+                @include flex(row, no-wrap, center, stretch, 0);
             }
             &-imagen-2{
-                display: flex;
-                justify-content: center; 
+                @include flex(row, no-wrap, center, stretch, 0);
             }
         }
     }
-
 }
 
 .titulo{
@@ -656,20 +563,15 @@
 }
 .requisitos-vehiculos{
     &-1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, no-wrap, center, center, 0);
         padding: $sp-m;
         margin: 0 auto;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding: $sp-s $sp-s $sp-s $sp-m;
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-titulo{
@@ -677,73 +579,53 @@
         }
     }
     &-2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, no-wrap, center, center, 0);
         padding: $sp-m;
         margin: 0 auto;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding: $sp-s $sp-s $sp-s $sp-m;
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-titulo{
             display: flex;
         }
     }
-
 }
 .vehiculos-interior{
     &-1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, no-wrap, center, center, 0);
         margin: 0 auto;
         padding: $sp-m;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
-            
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-titulo{
-            display: flex;
-            justify-content: flex-end;
+            @include flex(row, no-wrap, flex-end, stretch, 0);
         }
     }
     &-2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, no-wrap, center, center, 0);
         margin: 0 auto;
         padding: $sp-m;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
-            
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-titulo{
-            display: flex;
-            justify-content: flex-end;
+            @include flex(row, no-wrap, flex-end, stretch, 0);
         }
     }
 
@@ -751,116 +633,85 @@
 
 .condicion-vehiculos{
     &-1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, no-wrap, center, center, 0);
         padding: $sp-m;
         margin: 0 auto;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
             padding-right:$sp-s ;
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-titulo{
             display: flex;
-    
         }
     }
     &-2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, no-wrap, center, center, 0);
         padding: $sp-m;
         margin: 0 auto;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
             padding-right:$sp-s ;
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-titulo{
             display: flex;
-    
         }
     }
-
 }
 .impuestos-vehiculos{
     &-1{
-        display: flex;
-        justify-content: center;
+        @include flex(row, no-wrap, center, stretch, 0);
         padding: $sp-m;
         margin: 0 auto;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
-    
         &-titulo{
-            display: flex;
-            justify-content: flex-end;
+            @include flex(row, no-wrap, flex-end, stretch, 0);
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            @include flex(column, no-wrap, flex-start, stretch, 0);
             padding-top: $sp-s;
         }
     }
     &-2{
-        display: flex;
-        justify-content: center;
+        @include flex(row, no-wrap, center, stretch, 0);
         padding: $sp-m;
         margin: 0 auto;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
-    
         &-titulo{
-            display: flex;
-            justify-content: flex-end;
+            @include flex(row, no-wrap, flex-end, stretch, 0);
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            @include flex(column, no-wrap, flex-start, stretch, 0);
             padding-top: $sp-s;
         }
     }
-
 }
 
 .ciffob-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, no-wrap, center, center, 0);
     padding: $sp-m;
     margin: 0 auto;
     &-imagen{
-        justify-content: center;
-        display: flex;
+        @include flex(row, no-wrap, center, stretch, 0);
         padding: $sp-s $sp-s $sp-s $sp-m;
     }
     &-texto{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex(column, no-wrap, center, stretch, 0);
         padding-top: $sp-s;
     }
     &-titulo{

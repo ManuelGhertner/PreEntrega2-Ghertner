@@ -205,7 +205,7 @@ header {
   .navbar-link {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: no-wrap;
     justify-content: flex-start;
     align-items: center;
     gap: 0;
@@ -220,7 +220,8 @@ header {
       font-size: 1.6rem;
       padding: 0.4rem; }
     .navbar-link-nombre {
-      padding: 0.8rem 0.8rem 0.4rem 0.8rem; }
+      padding: 0.8rem 0.8rem 0.4rem 0.8rem;
+      margin-bottom: 0; }
       .navbar-link-nombre:first-of-type {
         border-bottom: 1px solid #FFFFFF; }
 
@@ -258,7 +259,8 @@ header {
   margin: 0 auto; }
   #conozcanos h1 {
     font-size: 3.2em;
-    padding: 1.6rem 1.6rem 1.6rem 5rem; }
+    padding: 1.6rem 1.6rem 1.6rem 5rem;
+    font-weight: bold; }
   #conozcanos p {
     font-size: 1.6em; }
 
@@ -352,7 +354,7 @@ header {
   flex-direction: row;
   flex-wrap: no-wrap;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   gap: 0;
   margin: 0 auto;
   padding-top: 1.6rem;
@@ -378,7 +380,7 @@ header {
   flex-direction: row;
   flex-wrap: no-wrap;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   gap: 0;
   margin: 0 auto;
   padding-top: 1.6rem;
@@ -472,6 +474,10 @@ header {
 .contacto {
   display: flex;
   flex-direction: column;
+  flex-wrap: no-wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
   padding: 1.6rem 0 1.6rem 1.6rem; }
   .contacto-email {
     font-size: 2em; }
@@ -548,12 +554,13 @@ header {
   color: #00487C;
   font-size: 2em; }
   .alianzas-imagenes-titulo {
-    padding: 1.6rem; }
+    padding: 1.6rem;
+    font-weight: bold; }
   .alianzas-imagenes-orden-iam {
     padding: 1.6rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: no-wrap;
     justify-content: center;
     align-items: center;
     gap: 0; }
@@ -561,7 +568,7 @@ header {
     padding: 1.6rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: no-wrap;
     justify-content: center;
     align-items: center;
     gap: 0; }
@@ -569,14 +576,14 @@ header {
     padding: 1.6rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: no-wrap;
     justify-content: center;
     align-items: center;
     gap: 0; }
   .alianzas-imagenes-orden-ara {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: no-wrap;
     justify-content: center;
     align-items: center;
     gap: 0; }
@@ -594,7 +601,7 @@ header {
 .banner-contenido {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: no-wrap;
   justify-content: flex-start;
   align-items: stretch;
   gap: 0; }
@@ -671,7 +678,7 @@ header {
 
 .servicios {
   padding-top: 3.2rem;
-  padding-bottom: 1.6rem; }
+  padding-bottom: 3.2rem; }
   .servicios-desde {
     font-size: 3.2em;
     color: #FFFFFF;
@@ -777,7 +784,7 @@ header {
     .servicios-desde-ubicacion {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: no-wrap;
       justify-content: center;
       align-items: center;
       gap: 0; }
@@ -786,7 +793,7 @@ header {
     .servicios-hacia-ubicacion {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: no-wrap;
       justify-content: center;
       align-items: center;
       gap: 0; } }
@@ -812,13 +819,22 @@ header {
   margin: 0;
   padding: 1.6rem;
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
+  align-items: stretch;
+  gap: 0;
   font-weight: bold; }
 
 .preguntas-frecuentes-titulo-desde {
   margin: 0;
   padding: 0.8rem 1.6rem 0.8rem 3.2rem;
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
   font-weight: bold;
   font-size: 3.6em; }
 
@@ -826,35 +842,62 @@ header {
   margin: 0;
   padding: 0.8rem 1.6rem 0.8rem 3.2rem;
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
   font-weight: bold;
   font-size: 3.6em; }
 
 .volumen-mudanza-1 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
   margin: 0 auto;
   padding: 3.2rem; }
   .volumen-mudanza-1-imagen {
     display: flex;
-    justify-content: flex-start; }
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0; }
   .volumen-mudanza-1-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: flex-start;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
 
 .volumen-mudanza-2 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
   margin: 0 auto;
   padding: 3.2rem; }
   .volumen-mudanza-2-imagen {
     display: flex;
-    justify-content: flex-start; }
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0; }
   .volumen-mudanza-2-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: flex-start;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
 
 @media screen and (max-width: 992px) {
@@ -936,43 +979,71 @@ header {
 
 .costo-mudanza-1 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   margin: 0 auto;
   padding: 3.2rem; }
   .costo-mudanza-1-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding: 3.2rem 12rem 3.2rem 12rem; }
   .costo-mudanza-1-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .costo-mudanza-1-titulo {
     display: flex;
-    justify-content: flex-end; }
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    gap: 0; }
   .costo-mudanza-1-lista-imagen {
     display: flex; }
 
 .costo-mudanza-2 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   margin: 0 auto;
   padding: 3.2rem; }
   .costo-mudanza-2-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding: 3.2rem 12rem 3.2rem 12rem; }
   .costo-mudanza-2-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .costo-mudanza-2-titulo {
     display: flex;
-    justify-content: flex-end; }
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    gap: 0; }
   .costo-mudanza-2-lista-imagen {
     display: flex; }
 
@@ -994,227 +1065,373 @@ header {
 
 .impuestos-1 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .impuestos-1-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .impuestos-1-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
 
 .impuestos-2 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .impuestos-2-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .impuestos-2-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
 
 .requisitos-1 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .requisitos-1-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .requisitos-1-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .requisitos-1-titulo {
     display: flex; }
 
 .requisitos-2 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .requisitos-2-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .requisitos-2-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .requisitos-2-titulo {
     display: flex; }
 
 .seguro-1 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
+  align-items: stretch;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .seguro-1-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .seguro-1-titulo {
     display: flex; }
   .seguro-1-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: flex-start;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
 
 .seguro-2 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
+  align-items: stretch;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .seguro-2-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .seguro-2-titulo {
     display: flex; }
   .seguro-2-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: flex-start;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
 
 .tiempo-1 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .tiempo-1-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .tiempo-1-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .tiempo-1-titulo {
     display: flex;
-    justify-content: flex-end; }
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    gap: 0; }
 
 .tiempo-2 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .tiempo-2-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .tiempo-2-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .tiempo-2-titulo {
     display: flex;
-    justify-content: flex-end; }
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    gap: 0; }
 
 .transporte-1 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   margin: 0 auto;
   padding: 3.2rem; }
   .transporte-1-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .transporte-1-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .transporte-1-titulo {
     display: flex; }
 
 .transporte-2 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   margin: 0 auto;
   padding: 3.2rem; }
   .transporte-2-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .transporte-2-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .transporte-2-titulo {
     display: flex; }
 
 .contenedores-1 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
+  align-items: stretch;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .contenedores-1-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: flex-start;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .contenedores-1-titulo {
     display: flex; }
   .contenedores-1-imagenes {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
     .contenedores-1-imagenes-imagen-1 {
       display: flex;
-      justify-content: center; }
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      justify-content: center;
+      align-items: stretch;
+      gap: 0; }
     .contenedores-1-imagenes-imagen-2 {
       display: flex;
-      justify-content: center; }
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      justify-content: center;
+      align-items: stretch;
+      gap: 0; }
 
 .contenedores-2 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
+  align-items: stretch;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .contenedores-2-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: flex-start;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .contenedores-2-titulo {
     display: flex; }
   .contenedores-2-imagenes {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
     .contenedores-2-imagenes-imagen-1 {
       display: flex;
-      justify-content: center; }
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      justify-content: center;
+      align-items: stretch;
+      gap: 0; }
     .contenedores-2-imagenes-imagen-2 {
       display: flex;
-      justify-content: center; }
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      justify-content: center;
+      align-items: stretch;
+      gap: 0; }
 
 .titulo-exportacion {
   padding: 1.6rem 1.6rem 1.6rem 0; }
@@ -1224,166 +1441,274 @@ header {
 
 .requisitos-vehiculos-1 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .requisitos-vehiculos-1-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding: 1.6rem 1.6rem 1.6rem 3.2rem; }
   .requisitos-vehiculos-1-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .requisitos-vehiculos-1-titulo {
     display: flex; }
 
 .requisitos-vehiculos-2 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .requisitos-vehiculos-2-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding: 1.6rem 1.6rem 1.6rem 3.2rem; }
   .requisitos-vehiculos-2-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .requisitos-vehiculos-2-titulo {
     display: flex; }
 
 .vehiculos-interior-1 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   margin: 0 auto;
   padding: 3.2rem; }
   .vehiculos-interior-1-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .vehiculos-interior-1-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .vehiculos-interior-1-titulo {
     display: flex;
-    justify-content: flex-end; }
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    gap: 0; }
 
 .vehiculos-interior-2 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   margin: 0 auto;
   padding: 3.2rem; }
   .vehiculos-interior-2-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .vehiculos-interior-2-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .vehiculos-interior-2-titulo {
     display: flex;
-    justify-content: flex-end; }
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    gap: 0; }
 
 .condicion-vehiculos-1 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .condicion-vehiculos-1-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem;
     padding-right: 1.6rem; }
   .condicion-vehiculos-1-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .condicion-vehiculos-1-titulo {
     display: flex; }
 
 .condicion-vehiculos-2 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .condicion-vehiculos-2-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem;
     padding-right: 1.6rem; }
   .condicion-vehiculos-2-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .condicion-vehiculos-2-titulo {
     display: flex; }
 
 .impuestos-vehiculos-1 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
+  align-items: stretch;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .impuestos-vehiculos-1-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .impuestos-vehiculos-1-titulo {
     display: flex;
-    justify-content: flex-end; }
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    gap: 0; }
   .impuestos-vehiculos-1-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: flex-start;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
 
 .impuestos-vehiculos-2 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
+  align-items: stretch;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .impuestos-vehiculos-2-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .impuestos-vehiculos-2-titulo {
     display: flex;
-    justify-content: flex-end; }
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    gap: 0; }
   .impuestos-vehiculos-2-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: flex-start;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
 
 .ciffob-2 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .ciffob-2-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding: 1.6rem 1.6rem 1.6rem 3.2rem; }
   .ciffob-2-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .ciffob-2-titulo {
     display: flex; }
@@ -1404,22 +1729,33 @@ header {
 
 .servicio-para-embajadas {
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   padding: 3.2rem;
   margin: 0 auto; }
   .servicio-para-embajadas-imagen {
-    justify-content: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem; }
   .servicio-para-embajadas-texto {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 0;
     padding-top: 1.6rem;
     font-size: 1.6em; }
   .servicio-para-embajadas-titulo {
-    font-size: 4.8em; }
+    font-size: 4.8em;
+    font-weight: bold; }
 
 @media screen and (max-width: 576px) {
   .servicio-para-embajadas-imagen img {
@@ -1434,8 +1770,13 @@ header {
   background-color: #00487C;
   color: #FFFFFF;
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: center;
+  align-items: stretch;
+  gap: 0;
   padding: 3.2rem 0 3.2rem 0;
+  margin-bottom: 3rem;
   background-image: linear-gradient(to bottom, #020024 0%, #00487c 49%, #014e63 100%); }
   .presupuesto-embajadas h2 {
     font-size: 3.6em; }
@@ -1454,20 +1795,24 @@ header {
     padding-right: 0.8rem; }
 
 .formulario-embajada-datos-de-contacto-nombre {
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  color: #00487C; }
 
 .formulario-embajada-datos-de-contacto-apellido {
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  color: #00487C; }
 
 .formulario-embajada-datos-de-contacto-email {
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  color: #00487C; }
 
 .formulario-embajada-datos-de-contacto-titulo {
   padding: 1.6rem 0 1.6rem 0;
   display: flex; }
 
 .formulario-embajada-datos-de-contacto-telefono {
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  color: #00487C; }
 
 .formulario-embajada-datos-de-contacto-aspen {
   font-size: 1.6em;
@@ -1494,12 +1839,24 @@ header {
   padding: 0; }
   .formulario-embajada-detalles-mudanza-origen-pais-1 {
     padding: 0 0.8rem 0 0; }
+  .formulario-embajada-detalles-mudanza-origen-pais {
+    color: #00487C; }
   .formulario-embajada-detalles-mudanza-origen-ciudad-1 {
     padding: 0 0.8rem 0 0; }
+  .formulario-embajada-detalles-mudanza-origen-ciudad {
+    color: #00487C; }
+  .formulario-embajada-detalles-mudanza-origen-calle {
+    color: #00487C; }
+  .formulario-embajada-detalles-mudanza-origen-codigo-postal {
+    color: #00487C; }
   .formulario-embajada-detalles-mudanza-origen-separador {
-    padding: 0.8rem 0 0.8rem 0;
+    padding: 0.8rem 0 0.8rem 0.8rem;
     display: flex;
-    justify-content: space-around; }
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 0; }
     .formulario-embajada-detalles-mudanza-origen-separador-2 {
       display: flex;
       padding: 0.8rem 0.8rem 0.8rem 0.4rem; }
@@ -1509,15 +1866,27 @@ header {
   padding: 0; }
   .formulario-embajada-detalles-mudanza-destino-pais-1 {
     padding: 0 0.8rem 0 0; }
+  .formulario-embajada-detalles-mudanza-destino-pais {
+    color: #00487C; }
   .formulario-embajada-detalles-mudanza-destino-ciudad-1 {
     padding: 0 0.8rem 0 0; }
+  .formulario-embajada-detalles-mudanza-destino-ciudad {
+    color: #00487C; }
+  .formulario-embajada-detalles-mudanza-destino-calle {
+    color: #00487C; }
+  .formulario-embajada-detalles-mudanza-destino-codigo-postal {
+    color: #00487C; }
   .formulario-embajada-detalles-mudanza-destino-separador {
-    padding: 0.8rem 0 0.8rem 0;
+    padding: 0.8rem 0 0.8rem 0.8rem;
     display: flex;
-    justify-content: space-around; }
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 0; }
     .formulario-embajada-detalles-mudanza-destino-separador-2 {
       display: flex;
-      padding: 0.8rem 0.8rem 0.8rem 0.4rem; }
+      padding: 0.8rem 0.8rem 1.6rem 0.4rem; }
 
 .formulario-embajada-detalles-mudanza-botones {
   display: flex; }
@@ -1541,13 +1910,25 @@ header {
 @media screen and (max-width: 768px) {
   .formulario-embajada-detalles-mudanza-origen {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0; }
     .formulario-embajada-detalles-mudanza-origen-contenedor {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      flex-wrap: no-wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      gap: 0; }
     .formulario-embajada-detalles-mudanza-origen-separador {
       display: flex;
       flex-direction: column;
+      flex-wrap: no-wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      gap: 0;
       padding: 0.8rem 0 0 0; }
     .formulario-embajada-detalles-mudanza-origen-separador-2 {
       padding-left: 0; }
@@ -1560,13 +1941,25 @@ header {
       padding: 0.8rem 0 0.8rem 0; }
   .formulario-embajada-detalles-mudanza-destino {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0; }
     .formulario-embajada-detalles-mudanza-destino-contenedor {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      flex-wrap: no-wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      gap: 0; }
     .formulario-embajada-detalles-mudanza-destino-separador {
       display: flex;
       flex-direction: column;
+      flex-wrap: no-wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      gap: 0;
       padding: 0.8rem 0 0 0; }
     .formulario-embajada-detalles-mudanza-destino-separador-2 {
       padding-left: 0; }
@@ -1579,7 +1972,11 @@ header {
       padding: 0.8rem 0 0.8rem 0; }
   .formulario-embajada-datos-de-contacto-contenedor {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0; }
     .formulario-embajada-datos-de-contacto-contenedor-nombre-1 {
       padding: 0.8rem; }
     .formulario-embajada-datos-de-contacto-contenedor-apellido-1 {

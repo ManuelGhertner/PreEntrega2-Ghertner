@@ -14,25 +14,21 @@
 
 
 .servicio-para-embajadas{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    @include flex(row, no-wrap, center, center, 0);
         padding: $sp-m;
         margin: 0 auto;
         &-imagen{
-            justify-content: center;
-            display: flex;
+            @include flex(row, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
         }
         &-texto{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, no-wrap, center, stretch, 0);
             padding-top: $sp-s;
             font-size: $text-s;
         }
         &-titulo{
             font-size: $text-xxl;
+            font-weight: bold;
         }
 }
 @media screen and (max-width:576px) {
@@ -56,9 +52,9 @@
 .presupuesto-embajadas{
     background-color: $primary;
     color: $light;
-    display: flex;
-    justify-content: center;
+    @include flex(row, no-wrap, center, stretch, 0);
     padding: $sp-m 0 $sp-m 0;
+    margin-bottom: 3rem;
     background-image:linear-gradient(to bottom,rgba(2,0,36,1) 0%, rgba(0,72,124,1) 49%, rgba(1,78,99,1) 100%);
         h2{
             font-size:$text-xl;
@@ -94,12 +90,15 @@
         }
         &-nombre{
             font-size: $text-s;
+            color: $primary;
         }
         &-apellido{
            font-size: $text-s;
+           color: $primary;
         }
         &-email{
            font-size: $text-s;
+           color: $primary;
         }
         &-titulo{
             padding: $sp-s 0 $sp-s 0 ;
@@ -108,6 +107,7 @@
 
         &-telefono{
             font-size: $text-s;
+            color: $primary;
         }
         &-aspen{
             font-size: $text-s;
@@ -129,7 +129,7 @@
         }
         &-fecha{
             font-size: $text-s;
-              padding: 0 0 $sp-s 0 ;
+            padding: 0 0 $sp-s 0 ;
         }
         &-origen{
             font-size: $text-s;
@@ -137,13 +137,24 @@
             &-pais-1{
                 padding:0 $sp-xs 0 0;
             }
+            &-pais{
+                color: $primary;
+            }
             &-ciudad-1{
                 padding:0 $sp-xs 0 0;
             }
+            &-ciudad{
+                color: $primary;
+            }
+            &-calle{
+                color: $primary;
+            }
+            &-codigo-postal{
+                color: $primary;
+            }
             &-separador{
-                padding: $sp-xs 0 $sp-xs 0;
-                display: flex;
-                justify-content: space-around;
+                padding: $sp-xs 0 $sp-xs $sp-xs;
+                @include flex(row, no-wrap, space-around, stretch, 0);
                 &-2{
                     display: flex;
                     padding: $sp-xs $sp-xs $sp-xs 0.4rem;
@@ -156,16 +167,27 @@
             &-pais-1{
                 padding:0 $sp-xs 0 0;
             }
+            &-pais{
+                color: $primary;
+            }
             &-ciudad-1{
                 padding:0 $sp-xs 0 0;
             }
+            &-ciudad{
+                color: $primary;
+            }
+            &-calle{
+                color: $primary;
+            }
+            &-codigo-postal{
+                color: $primary;
+            }
             &-separador{
-                padding: $sp-xs 0 $sp-xs 0;
-                display: flex;
-                justify-content: space-around;
+                padding: $sp-xs 0 $sp-xs $sp-xs;
+                @include flex(row, no-wrap, space-around, stretch, 0);
                 &-2{
                     display: flex;
-                    padding: $sp-xs $sp-xs $sp-xs 0.4rem;
+                    padding: $sp-xs $sp-xs $sp-s 0.4rem;
                 }
             }
         }
@@ -199,15 +221,12 @@
 @media screen and (max-width:768px) {
 .formulario-embajada-detalles-mudanza{
     &-origen{
-        display: flex;
-        flex-direction: column;
+        @include flex(column, no-wrap, flex-start, stretch, 0);
         &-contenedor{
-            display: flex;
-            flex-direction: column;
+            @include flex(column, no-wrap, flex-start, stretch, 0);
         }
         &-separador{
-            display: flex;
-            flex-direction: column;
+            @include flex(column, no-wrap, flex-start, stretch, 0);
             padding: $sp-xs 0 0 0;
         }
         &-separador-2{
@@ -225,15 +244,12 @@
         }
     }
     &-destino{
-        display: flex;
-        flex-direction: column;
+        @include flex(column, no-wrap, flex-start, stretch, 0);
         &-contenedor{
-            display: flex;
-            flex-direction: column;
+            @include flex(column, no-wrap, flex-start, stretch, 0);
         }
         &-separador{
-            display: flex;
-            flex-direction: column;
+            @include flex(column, no-wrap, flex-start, stretch, 0);
             padding: $sp-xs 0 0 0;
         }
         &-separador-2{
@@ -253,8 +269,7 @@
  
 }
 .formulario-embajada-datos-de-contacto-contenedor{
-    display: flex;
-    flex-direction: column;
+    @include flex(column, no-wrap, flex-start, stretch, 0);
     &-nombre-1{
         padding: $sp-xs ;
     }
