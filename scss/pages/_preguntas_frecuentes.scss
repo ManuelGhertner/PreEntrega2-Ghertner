@@ -42,8 +42,6 @@
         font-size: $text-xl;
     }
 }
-
-
 .volumen-mudanza{
     &-1{
         @include flex(row, no-wrap, space-between, stretch, 0);

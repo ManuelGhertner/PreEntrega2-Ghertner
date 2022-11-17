@@ -1,28 +1,17 @@
 
     .map-responsive{
-
         overflow:hidden;
-    
         padding-bottom:15%;
-    
         position:relative;
-    
         height:0;
-    
     }
     
     .map-responsive iframe{
-    
         left:0;
-    
         top:0;
-    
         max-height:100%;
-    
         width:100%;
-    
         position:absolute;
-    
     }
 .contenedor-mapa{
     max-height: 40rem;
@@ -41,6 +30,7 @@
         }
         &-titulo{
             font-size: $text-xxl;
+            font-weight: bold;
             &-email{
                 font-size: $text-l;
             }
@@ -64,4 +54,4 @@
         .map-responsive{
             padding-bottom:35%;
         }
-            }
+    }
