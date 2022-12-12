@@ -1,23 +1,43 @@
 
 const nombre = () => {
-    nombreIngresado = prompt("¿Cual es su nombre?").toUpperCase()
+    nombreIngresado = prompt("Ingrese su nombre:").toUpperCase()
+    while (nombreIngresado === "") {
+        nombreIngresado = prompt("Ingrese un nombre:").toUpperCase()
+    }
 }
 
 const apellido = () => {
-    apellidoIngresado = prompt("¿Cual es su apellido?").toUpperCase()
+    apellidoIngresado = prompt("Ingrese su apellido:").toUpperCase()
+    while (apellidoIngresado === "") {
+        apellidoIngresado = prompt("Ingrese un apellido:").toUpperCase()
+    }
+}
+
+const mail = () => {
+    correoElectronico = prompt("Ingrese su correo electronico:").toUpperCase()
+    while (correoElectronico === "") {
+        correoElectronico = prompt("Ingrese un correo electronico valido:").toUpperCase()
+    }
 }
 
 const origen = () => {
     origenMudanza = prompt("¿Cual es el origen de su mudanza?").toUpperCase()
+    while (origenMudanza === "") {
+        origenMudanza = prompt("Ingrese un origen valido:").toUpperCase()
+    }
 }
 
 const destino = () => {
     destinoMudanza = prompt("¿Cual es el destino de su mudanza?").toUpperCase()
+    while (destinoMudanza === "") {
+        destinoMudanza = prompt("Ingrese un destino valido:").toUpperCase()
+    }
 }
 
 const cubicador = []
 nombre()
 apellido()
+mail()
 origen()
 destino()
 
@@ -105,7 +125,7 @@ const finalizarCubicador = (listaMuebles) =>{
     if (cantidadTotal === 0) {
         alert("Estimado"+" "+nombreIngresado+" "+apellidoIngresado+" "+"No posee muebles seleccionados")
     }else {
-        alert ( "Estimado"+" "+nombreIngresado+" "+apellidoIngresado+" "+"El origen de su mudanza es"+" "+origenMudanza+" "+"y el destino de su mudanza es"+" "+destinoMudanza
+        alert ( "Estimado"+" "+nombreIngresado+" "+apellidoIngresado+", "+"su correo electronico es "+correoElectronico+". "+"El origen de su mudanza es"+" "+origenMudanza+" "+"y el destino de su mudanza es"+" "+destinoMudanza+"."
         +"\n\n Los muebles que selecciono son: \n "+listaMuebles.join("\n")
         + "\n\n El volumen total estimado de su mudanza es: "+volumenTotal+"m3"
         + "\n\n Gracias por utilizar el cubicador."
