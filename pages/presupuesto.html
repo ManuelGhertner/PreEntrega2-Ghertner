@@ -50,34 +50,54 @@
     <main class="container">
     <section id="presupuesto">
         <h1 class="presupuesto-titulo">Solicitar presupuesto.</h1>
-        <form action="" method="get" enctype="">
+        <form id="form" action="" method="get" enctype="">
             <section class="formulario-embajada row container">
                 <article class="formulario-embajada-datos-de-contacto col-xxl-7 col-sm-6">
                     <h2 class="formulario-embajada-datos-de-contacto-titulo"><a name="presupuesto_diplomaticos"></a> Datos de contacto</h2>
                     <article class="formulario-embajada-datos-de-contacto-contenedor">
                         <article class="formulario-embajada-datos-de-contacto-contenedor-nombre-1"> 
-                            <input class="formulario-embajada-datos-de-contacto-nombre" type="text" name="Nombre" id="" placeholder="Nombre">
+                            <input class="formulario-embajada-datos-de-contacto-nombre" type="text" name="nombre" id="" placeholder="Nombre">
                         </article>
                         <article class="formulario-embajada-datos-de-contacto-contenedor-apellido-1"> 
-                            <input class="formulario-embajada-datos-de-contacto-apellido"type="text" name="Apellido" id="" placeholder="Apellido">
+                            <input class="formulario-embajada-datos-de-contacto-apellido"type="text" name="apellido" id="" placeholder="Apellido">
                         </article>
                         <article class="formulario-embajada-datos-de-contacto-contenedor-email-1"> 
-                            <input class="formulario-embajada-datos-de-contacto-email"type="email" name="Email" id="" placeholder="Email">
+                            <input class="formulario-embajada-datos-de-contacto-email"type="email" name="email" id="" placeholder="Email">
                         </article>
                         <article class="formulario-embajada-datos-de-contacto-contenedor-telefono-1"> 
-                            <input class="formulario-embajada-datos-de-contacto-telefono"type="number" name="Telefono" id="" placeholder="Telefono">
+                            <input class="formulario-embajada-datos-de-contacto-telefono"type="number" name="telefono" id="" placeholder="Telefono">
                         </article>
                 </article>
                 <article class="formulario-embajada-datos-de-contacto-envio">
                     <h3>Tipo de envio.</h3>
                         <label for="">Importacion</label>
-                        <input type="radio" name="tipo" id="tipo" value="Importacion">
+                        <input type="radio" name="tipo" id="tipo1" value="Importacion">
                         <label for="">Exportacion</label>
-                        <input type="radio" name="tipo" id="tipo" value="Exportacion">
+                        <input type="radio" name="tipo" id="tipo2" value="Exportacion">
                         <label for="">Nacional</label>
-                        <input type="radio" name="tipo" id="tipo" value="Nacional">
+                        <input type="radio" name="tipo" id="tipo3" value="Nacional">
                     </article>
                 </article>
+                <article id="cubicadorTabla" class="col-xxl-12">
+                    <h3>Cubicador</h3>
+
+                    <div id="modal-contenedor" class="shadow-lg p-3 mb-5 bg-body rounded">
+                        <h3>Volumen estimado</h3>
+                        <p>La lista de los muebles seleccionados es:</p>
+                        <div id="modal-cubicador" class="shadow-lg p-3 mb-5 bg-body rounded">
+
+
+                        </div>
+                        <p>
+                            El volumen total estimado es:
+                            <span id="volumen-total"></span>
+                            m3
+                        </p>
+                        
+                    </div>
+                </article>
+
+
                 <article class="formulario-embajada-detalles-mudanza col-xxl-5">   
                     <h2 class="formulario-embajada-detalles-mudanza-titulo">Detalles de la mudanza.</h2>
                     <article class="formulario-embajada-detalles-mudanza-fecha">
@@ -150,8 +170,12 @@
                 </figure>
             </section>
     </footer>
-    <script src="../js/items.js"></script>
+    <script src="../js/src/components/data/items.js"></script>
+    <script src="../js/src/components/cart/cart.js"></script>
+    <script src="../js/src/components/cart/modal.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/src/index.js"></script>
     <script src="../js/bootstrap.bundle.js"></script>
+
 </body>
 </html>
