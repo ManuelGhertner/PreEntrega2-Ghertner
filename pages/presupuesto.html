@@ -7,9 +7,19 @@
     <meta name="description" content="Pida su presupuesto gratis para su mudanza internacional.">
     <meta name="keywords" content="PRESUPUESTO, COTIZACION MUDANZA INTERNACIONAL, COSTO MUDANZA">
     <title>Pedir presupuesto</title>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="icon" type="image/x-icon" href="../images/logoElishar.jpg">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/translated.css">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("E0i0b-edB2nTNnHoY");
+   })();
+</script>
 </head>
 <body>
     <header>
@@ -56,19 +66,19 @@
                     <h2 class="formulario-embajada-datos-de-contacto-titulo"><a name="presupuesto_diplomaticos"></a> Datos de contacto</h2>
                     <article class="formulario-embajada-datos-de-contacto-contenedor">
                         <article class="formulario-embajada-datos-de-contacto-contenedor-nombre-1"> 
-                            <input class="formulario-embajada-datos-de-contacto-nombre" type="text" name="nombre" id="" placeholder="Nombre">
+                            <input class="formulario-embajada-datos-de-contacto-nombre" type="text" name="nombre" id="primerNombre" placeholder="Nombre">
                         </article>
                         <article class="formulario-embajada-datos-de-contacto-contenedor-apellido-1"> 
-                            <input class="formulario-embajada-datos-de-contacto-apellido"type="text" name="apellido" id="" placeholder="Apellido">
+                            <input class="formulario-embajada-datos-de-contacto-apellido"type="text" name="apellido" id="primerApellido" placeholder="Apellido">
                         </article>
                         <article class="formulario-embajada-datos-de-contacto-contenedor-email-1"> 
-                            <input class="formulario-embajada-datos-de-contacto-email"type="email" name="email" id="" placeholder="Email">
+                            <input class="formulario-embajada-datos-de-contacto-email"type="email" name="email" id="correoElectronico" placeholder="Email">
                         </article>
                         <article class="formulario-embajada-datos-de-contacto-contenedor-telefono-1"> 
-                            <input class="formulario-embajada-datos-de-contacto-telefono"type="number" name="telefono" id="" placeholder="Telefono">
+                            <input class="formulario-embajada-datos-de-contacto-telefono"type="number" name="telefono" id="numeroTelefono" placeholder="Telefono">
                         </article>
                 </article>
-                <article class="formulario-embajada-datos-de-contacto-envio">
+                <!-- <article class="formulario-embajada-datos-de-contacto-envio">
                     <h3>Tipo de envio.</h3>
                         <label for="">Importacion</label>
                         <input type="radio" name="tipo" id="tipo1" value="Importacion">
@@ -76,7 +86,7 @@
                         <input type="radio" name="tipo" id="tipo2" value="Exportacion">
                         <label for="">Nacional</label>
                         <input type="radio" name="tipo" id="tipo3" value="Nacional">
-                    </article>
+                    </article> -->
                 </article>
                 <article id="cubicadorTabla" class="col-xxl-12">
                     <h3>Cubicador</h3>
@@ -109,17 +119,17 @@
                         <article class="formulario-embajada-detalles-mudanza-origen-contenedor">
                             <article class="formulario-embajada-detalles-mudanza-origen-separador ">
                                 <article class="formulario-embajada-detalles-mudanza-origen-pais-1">
-                                    <input class="formulario-embajada-detalles-mudanza-origen-pais" type="text" name="Pais" id="" placeholder="Pais">
+                                    <input class="formulario-embajada-detalles-mudanza-origen-pais" type="text" name="Pais" id="paisOrigen" placeholder="Pais">
                                 </article>
                                 <article class="formulario-embajada-detalles-mudanza-origen-ciudad-1">
-                                    <input class="formulario-embajada-detalles-mudanza-origen-ciudad" type="text" name="Ciudad" id="" placeholder="Ciudad">
+                                    <input class="formulario-embajada-detalles-mudanza-origen-ciudad" type="text" name="Ciudad" id="ciudadOrigen" placeholder="Ciudad">
                                 </article>
                                 <article class="formulario-embajada-detalles-mudanza-origen-calle-1">
-                                    <input class="formulario-embajada-detalles-mudanza-origen-calle" type="text" name="Calle" id="" placeholder="Calle">
+                                    <input class="formulario-embajada-detalles-mudanza-origen-calle" type="text" name="Calle" id="calleOrigen" placeholder="Calle">
                                 </article>
                             </article>
                             <article class="formulario-embajada-detalles-mudanza-origen-separador-2">
-                                <input class="formulario-embajada-detalles-mudanza-origen-codigo-postal" type="number" name="Código postal" id="" placeholder="Código postal">
+                                <input class="formulario-embajada-detalles-mudanza-origen-codigo-postal" type="number" name="Código postal" id="cpOrigen" placeholder="Código postal">
                             </article>
                         </article>
                     </article>
@@ -128,22 +138,22 @@
                         <article class="formulario-embajada-detalles-mudanza-destino-contenedor">
                             <article class="formulario-embajada-detalles-mudanza-destino-separador ">
                                 <article class="formulario-embajada-detalles-mudanza-destino-pais-1">
-                                    <input class="formulario-embajada-detalles-mudanza-destino-pais" type="text" name="Pais" id="" placeholder="Pais">
+                                    <input class="formulario-embajada-detalles-mudanza-destino-pais" type="text" name="Pais" id="paisDestino" placeholder="Pais">
                                 </article>
                                 <article class="formulario-embajada-detalles-mudanza-destino-ciudad-1">
-                                    <input class="formulario-embajada-detalles-mudanza-destino-ciudad" type="text" name="Ciudad" id="" placeholder="Ciudad">
+                                    <input class="formulario-embajada-detalles-mudanza-destino-ciudad" type="text" name="Ciudad" id="ciudadDestino" placeholder="Ciudad">
                                 </article>
                                 <article class="formulario-embajada-detalles-mudanza-destino-calle-1">
-                                    <input class="formulario-embajada-detalles-mudanza-destino-calle" type="text" name="Calle" id="" placeholder="Calle">
+                                    <input class="formulario-embajada-detalles-mudanza-destino-calle" type="text" name="Calle" id="calleDestino" placeholder="Calle">
                                 </article>
                             </article>
                             <article class="formulario-embajada-detalles-mudanza-destino-separador-2">
-                                <input class="formulario-embajada-detalles-mudanza-destino-codigo-postal" type="number" name="Código postal" id="" placeholder="Código postal">
+                                <input class="formulario-embajada-detalles-mudanza-destino-codigo-postal" type="number" name="Código postal" id="cpDestino" placeholder="Código postal">
                             </article>
                         </article>
                     </article>
                     <article class="formulario-embajada-detalles-mudanza-botones">
-                        <input class="enviar btn btn-warning btn-lg formulario-embajada-detalles-mudanza-botones-enviar" type="submit" value="Enviar">
+                        <input class="enviar btn btn-warning btn-lg formulario-embajada-detalles-mudanza-botones-enviar" id="enviar" type="submit" value="Enviar">
                         <input class="reset btn btn-secondary btn-lg formulario-embajada-detalles-mudanza-botones-reset" type="reset" value="Reset">
                     </article>
                 </article>

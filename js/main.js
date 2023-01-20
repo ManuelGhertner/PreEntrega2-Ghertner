@@ -1,31 +1,20 @@
 
-// let cubicador = []
+// // let cubicador = []
 // const formulario = document.getElementById("form")
-// const nombre = document.getElementById("nombre")
-// const apellido = document.getElementById("apellido")
-// const email = document.getElementById("email")
-// const telefono = document.getElementById("telefono")
-// const cantidad = document.getElementById("cantidad")
+// const nombre = document.getElementById("primerNombre")
+// const apellido = document.getElementById("primerApellido")
+// const email = document.getElementById("correoElectronico")
+// const telefono = document.getElementById("numeroTelefono")
+
 
 
 
 // formulario.addEventListener("submit" , (e) =>{
 //     e.preventDefault() 
-//     agregarAlCubicador()
 
-// }
 
-// )
+// })
 
-// formulario.addEventListener("click", (e) => {
-//     const agregarAlCubicador = () => {
-//         itemsIngresados.cantidad++
-//         cubicador.push(item)
-//         console.log(cubicador)
-// }
-// }
-
-// )
 
 
 const mostrarMuebles = () => {
@@ -60,59 +49,6 @@ const mostrarMuebles = () => {
     }
         )
 }
-
-// const agregarAlCubicador = (item, itemCantidad, itemNombre) => {
-//     if (itemRepetido) {
-//         itemRepetido.cantidad += itemCantidad
-        
-//     } else {
-//         item.cantidad += itemCantidad
-//         cubicador.push(item)
-//     }
-// }
-
-
-// itemsIngresados.forEach(item => {
-//     const div = document.createElement("div")
-//     div.classList.add("mueble")
-//     div.innerHTML += `
-//     <table class="table">
-//     <thead>
-//       <tr>
-//         <th scope="col">#</th>
-//         <th scope="col">ITEM</th>
-//         <th scope="col">CANTIDAD</th>
-//         <th scope="col">TOTAL</th>
-//       </tr>
-//     </thead>
-//     <tbody>
-//       <tr>
-//         <th scope="row">1</th>
-//         <td>${itemsIngresados.nombre}</td>
-//         <td><input type="number" id="cantidad"></td>
-//         <td>@mdo</td>
-
-//     </tbody>
-//   </table>
-//     `
-// }
-
-// )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // const nombre = () => {

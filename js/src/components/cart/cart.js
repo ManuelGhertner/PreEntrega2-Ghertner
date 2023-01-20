@@ -1,5 +1,38 @@
 let cubicador = []; 
 
+const formulario = document.getElementById("form")
+const nombre = document.getElementById("primerNombre")
+const apellido = document.getElementById("primerApellido")
+const mail = document.getElementById("correoElectronico")
+const telefono = document.getElementById("numeroTelefono")
+
+const paisOrigen = document.getElementById("paisOrigen")
+const ciudadOrigen = document.getElementById("ciudadOrigen")
+const calleOrigen = document.getElementById("calleOrigen")
+const cpOrigen = document.getElementById("cpOrigen")
+
+const paisDestino = document.getElementById("paisDestino")
+const ciduadDestino = document.getElementById("ciduadDestino")
+const calleDestino = document.getElementById("calleDestino")
+const cpDestino = document.getElementById("cpDestino")
+
+
+
+
+
+formulario.addEventListener("submit", (e) => {
+e.preventDefault()
+
+console.log(nombre.value)
+console.log(apellido.value)
+console.log(mail.value)
+console.log(telefono.value)
+console.log(cpDestino.value)
+console.log(calleOrigen.value)
+})
+
+
+
 const itemContenedor = document.getElementById("cubicadorTabla")
 
 itemContenedor.addEventListener ('click', (e) => {
@@ -10,6 +43,7 @@ itemContenedor.addEventListener ('click', (e) => {
 
     
 })
+
 
 const validarItemRepetido = (itemId) => {
     const itemRepetido = cubicador.find(item => item.id == itemId)
@@ -37,7 +71,7 @@ const muebleAgregado = (item) => {
         <ul>
             <li>${item.nombre}</li>
             <li id=cantidad${item.id}>Cantidad: ${item.cantidad}</li>
-            <a class="btn btn-danger btn-sm eliminar" value="${item.id}">X</a>
+            <a class="btn btn-danger btn-sm eliminar" value="${item.id}">-</a>
         </ul>
         `
     contenedor.appendChild(div)
@@ -69,12 +103,13 @@ const actualizarCubicador = (cubicador) =>{
             <ul>
                 <li>${item.nombre}</li>
                 <li id=cantidad${item.id}>Cantidad: ${item.cantidad}</li>
-                <button type="button" class="btn btn-danger btn-sm eliminar" value="${item.id}">X</button>
+                <button type="button" class="btn btn-danger btn-sm eliminar" value="${item.id}">-</button>
             </ul>
             `
         contenedor.appendChild(div)
     })
     };
+
 
 
 
@@ -100,10 +135,18 @@ const mostrarTotalCubicador = (totalVolumen) => {
     volumenTotal.innerText = totalVolumen
 }
 
+const btn = document.getElementById("enviar")
 
-        //             if (item.cantidad > 1) {
-        //                 item.cantidad--
-        //             } else {
-        //                 cubicador.splice(index,1)
-                  
-        //             }
+btn.addEventListener( "click", () => {
+    Swal.fire ({
+        icon: "success",
+        title: "Felicidades",
+        text: `Estimado/a ${nombre.value}, su solicitud para una mudanza desde ${paisOrigen.value} hacia ${paisDestino.value} se ha enviado con exito`
+    
+    }
+        
+    )
+}
+
+)
+
