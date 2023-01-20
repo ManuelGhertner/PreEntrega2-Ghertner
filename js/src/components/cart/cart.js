@@ -22,13 +22,6 @@ const cpDestino = document.getElementById("cpDestino")
 
 formulario.addEventListener("submit", (e) => {
 e.preventDefault()
-
-console.log(nombre.value)
-console.log(apellido.value)
-console.log(mail.value)
-console.log(telefono.value)
-console.log(cpDestino.value)
-console.log(calleOrigen.value)
 })
 
 

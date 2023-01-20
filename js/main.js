@@ -25,15 +25,13 @@ const mostrarMuebles = () => {
         table.innerHTML += `
         <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">ITEM</th>
+          <th scope="col">MUEBLE SELECCIONADO</th>
           <th scope="col">MARQUE SI POSEE</th>
           <th scope="col">VOLUMEN</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">${item.id}</th>
           <td>${item.nombre}</td>
           <td>
             <a id=${item.id} class="btn btn-secondary btn-sm agregar">Agregar
@@ -43,7 +41,7 @@ const mostrarMuebles = () => {
           <td>${item.volumen}m3</td>
         </tr>
       </tbody>
-
+      
         `
         contenedor.appendChild(table)
     }
