@@ -143,3 +143,48 @@ btn.addEventListener( "click", () => {
 
 )
 
+
+// btn.addEventListener( "click", () => {
+
+    function sendMail() {
+   
+        var params = {
+            nombre: document.getElementById("primerNombre").value,
+            apellido: document.getElementById("primerApellido").value,
+            email: document.getElementById("correoElectronico").value,
+            telefono: document.getElementById("numeroTelefono").value,
+            paisOrigen: document.getElementById("paisOrigen").value,
+            ciudadOrigen: document.getElementById("ciudadOrigen").value,
+            calleOrigen: document.getElementById("calleOrigen").value,
+            cpOrigen: document.getElementById("cpOrigen").value,
+            paisDestino: document.getElementById("paisDestino").value,
+            ciduadDestino: document.getElementById("ciudadDestino").value,
+            calleDestino: document.getElementById("calleDestino").value,
+            cpDestino: document.getElementById("cpDestino").value
+        }
+    const serviceID = "service_pscciu4"
+    const templateID = "template_lcrwx5i"
+    
+    emailjs.send(serviceID,templateID,params)
+    .then(
+        (res) => {
+            document.getElementById("primerNombre").value = "";
+            document.getElementById("primerApellido").value = "";
+            document.getElementById("correoElectronico").value = "";
+            document.getElementById("numeroTelefono").value = "";
+            document.getElementById("paisOrigen").value = "";
+            document.getElementById("ciudadOrigen").value = "";
+            document.getElementById("calleOrigen").value = "";
+            document.getElementById("cpOrigen").value = "";
+            document.getElementById("paisDestino").value = "";
+            document.getElementById("ciudadDestino").value = "";
+            document.getElementById("calleDestino").value = "";
+            document.getElementById("cpDestino").value = "";
+
+        })
+  
+        .catch((err) => console.log(err))
+    }
+
+
+btn.addEventListener("click", sendMail)
