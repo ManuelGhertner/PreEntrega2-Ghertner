@@ -148,7 +148,7 @@ btn.addEventListener( "click", () => {
 
     function sendMail() {
    
-        var params = {
+        let params = {
             nombre: document.getElementById("primerNombre").value,
             apellido: document.getElementById("primerApellido").value,
             email: document.getElementById("correoElectronico").value,
